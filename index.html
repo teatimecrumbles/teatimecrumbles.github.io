@@ -1,1 +1,88 @@
-Hello
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Teatime Crumbles — অ্যাপ · Apps</title>
+<meta name="description" content="Mohammad Motiur Rahman-এর অ্যাপ: নকশি পিঠা এবং আরও। Apps by Mohammad Motiur Rahman: Nakshi Pitha Maker and more.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#006a4e">
+<link rel="icon" href="app/nakshipitha/icons/icon-192.png">
+<style>
+@font-face{font-family:"Hind Siliguri";font-weight:400;font-display:swap;src:url(app/nakshipitha/fonts/files/hind-siliguri-bengali-400-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
+@font-face{font-family:"Hind Siliguri";font-weight:400;font-display:swap;src:url(app/nakshipitha/fonts/files/hind-siliguri-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Hind Siliguri";font-weight:600;font-display:swap;src:url(app/nakshipitha/fonts/files/hind-siliguri-bengali-600-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
+@font-face{font-family:"Hind Siliguri";font-weight:600;font-display:swap;src:url(app/nakshipitha/fonts/files/hind-siliguri-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Galada";font-weight:400;font-display:swap;src:url(app/nakshipitha/fonts/files/galada-bengali-400-normal.woff2) format("woff2"),url(app/nakshipitha/fonts/files/galada-latin-400-normal.woff2) format("woff2")}
+:root{--green:#006a4e;--red:#f42a41;--gur:#8a4a12;--rice:#f7f1e3;--card:#fffdf7;--ink:#1f2a22;--muted:#5d6a60;--line:#dccfb4}
+@media (prefers-color-scheme:dark){:root{--rice:#121813;--card:#1a221b;--ink:#e6ece5;--muted:#a4b1a6;--line:#34402f;--gur:#e5a25e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--rice);color:var(--ink);font:17px/1.6 "Hind Siliguri","Noto Sans Bengali","Nirmala UI",system-ui,sans-serif}
+header{background:var(--green);color:#fff;padding:28px 18px 34px;text-align:center;position:relative}
+header::after{content:"";position:absolute;left:0;right:0;bottom:10px;border-bottom:3px dashed rgba(255,255,255,.55)}
+header h1{font:400 clamp(30px,7vw,44px)/1.1 "Galada","Hind Siliguri",serif;margin:0}
+header p{margin:6px 0 0;opacity:.92}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);vertical-align:middle;margin:0 6px}
+main{max-width:920px;margin:0 auto;padding:26px 16px 50px;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;position:relative}
+.card::before{content:"";position:absolute;inset:6px;border:2px dashed var(--line);border-radius:12px;pointer-events:none}
+.top{display:flex;gap:14px;align-items:center;position:relative}
+.top img,.top svg{width:72px;height:72px;border-radius:18px;flex:none}
+.card h2{margin:0;font:600 22px/1.25 "Hind Siliguri",sans-serif;color:var(--green)}
+@media (prefers-color-scheme:dark){.card h2{color:#7fd0ae}}
+.card h2 small{display:block;font-weight:400;font-size:15px;color:var(--muted)}
+.card p{margin:12px 0 0;position:relative}
+.card p.en{color:var(--muted);font-size:15px;margin-top:4px}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;position:relative}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1.5px solid var(--green);color:var(--green);text-decoration:none;font-weight:600;font-size:15px}
+.btn.primary{background:var(--green);color:#fff}
+@media (prefers-color-scheme:dark){.btn{color:#7fd0ae;border-color:#7fd0ae}.btn.primary{background:#0b7a5b;color:#fff;border-color:#0b7a5b}}
+.soon{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1.5px dashed var(--line);color:var(--muted);font-size:15px}
+.tag{display:inline-block;font-size:13px;background:var(--red);color:#fff;border-radius:6px;padding:0 8px;margin-top:6px}
+footer{text-align:center;color:var(--muted);font-size:15px;padding:0 16px 40px}
+footer a{color:var(--gur)}
+a:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Teatime Crumbles</h1>
+  <p>Mohammad Motiur Rahman-এর অ্যাপ <span class="dot" aria-hidden="true"></span> Apps by Mohammad Motiur Rahman</p>
+</header>
+
+<main>
+  <!-- ===== App: Nakshi Pitha ===== -->
+  <article class="card" id="nakshipitha">
+    <div class="top">
+      <img src="app/nakshipitha/icons/icon-192.png" alt="" width="72" height="72">
+      <div><h2>নকশি পিঠা <small>Nakshi Pitha Maker</small></h2><span class="tag">বিনামূল্যে · Free</span></div>
+    </div>
+    <p>নকশি পিঠার নকশা আঁকুন, আসল মাপের স্টেনসিল প্রিন্ট করুন, থ্রিডি ছাঁচ আর উৎসবের শুভেচ্ছা কার্ড বানান — ইন্টারনেট ছাড়াই।</p>
+    <p class="en">Design carved nakshi pitha, print a true-size stencil, export a 3D-printable stamp and festival greeting cards. Works offline; no ads, no sign-in.</p>
+    <div class="btns">
+      <a class="btn primary" href="app/nakshipitha/">ব্রাউজারে খুলুন · Open</a>
+      <!-- After the app is live on Google Play, replace the next line with:
+      <a class="btn" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.nakshipitha">Google Play</a> -->
+      <span class="soon">Google Play — শিগগির আসছে · coming soon</span>
+      <a class="btn" href="app/nakshipitha/privacy.html">গোপনীয়তা · Privacy</a>
+      <a class="btn" href="app/nakshipitha/licenses.html">লাইসেন্স · Licences</a>
+    </div>
+  </article>
+
+  <!-- ===== App: Darzi Studio (edit this card when the app is ready) ===== -->
+  <article class="card" id="darzistudio">
+    <div class="top">
+      <svg viewBox="0 0 72 72" aria-hidden="true"><rect width="72" height="72" rx="18" fill="#8a4a12"/><path d="M18 54 54 18" stroke="#f7f1e3" stroke-width="4" stroke-linecap="round"/><ellipse cx="50" cy="22" rx="3.2" ry="1.6" transform="rotate(-45 50 22)" fill="#8a4a12"/><path d="M50 22c10 8-6 14-14 22s-6 16 6 14" fill="none" stroke="#f42a41" stroke-width="2.4" stroke-dasharray="5 4" stroke-linecap="round"/></svg>
+      <div><h2>Darzi Studio</h2><span class="tag">শিগগির আসছে · Coming soon</span></div>
+    </div>
+    <p class="en">Details coming soon.</p>
+    <div class="btns"><a class="btn" href="app/darzistudio/">দেখুন · View</a></div>
+  </article>
+</main>
+
+<footer>
+  <p>যোগাযোগ · Contact: <a href="mailto:mohammadmotiurrahman@gmail.com">mohammadmotiurrahman@gmail.com</a> · <a href="https://github.com/teatimecrumbles">GitHub</a></p>
+  <p>© 2026 Mohammad Motiur Rahman</p>
+</footer>
+</body>
+</html>
