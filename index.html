@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Teatime Crumbles — অ্যাপ · Apps</title>
-<meta name="description" content="Mohammad Motiur Rahman-এর অ্যাপ: নকশি পিঠা, বাংলা ব্রেইল, স্পর্শ চিত্র, বাড়ি বানাও ও বিয়ের খাতা। Apps by Mohammad Motiur Rahman: Nakshi Pitha Maker, Bangla Braille, Sporsho Chitro, Bari Banao and Biyer Khata.">
+<meta name="description" content="Teatime Crumbles: বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ — নকশি পিঠা, বাংলা ব্রেইল, স্পর্শ চিত্র, বাড়ি বানাও ও বিয়ের খাতা। Thoughtfully made apps for Bangla speakers: Nakshi Pitha Maker, Bangla Braille, Sporsho Chitro, Bari Banao and Biyer Khata.">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#5b3d2b">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teatimecrumbles.github.io/">
 <meta property="og:title" content="Teatime Crumbles — অ্যাপ · Apps">
-<meta property="og:description" content="Mohammad Motiur Rahman-এর অ্যাপ। Apps by Mohammad Motiur Rahman: free, no ads, no sign-in.">
+<meta property="og:description" content="বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ। Thoughtfully made apps for Bangla speakers: free, no ads, no sign-in.">
 <meta property="og:image" content="https://teatimecrumbles.github.io/assets/teatime-crumbles-512.png">
 <link rel="icon" href="assets/teatime-crumbles.svg" type="image/svg+xml">
 <link rel="icon" href="assets/teatime-crumbles-512.png" sizes="512x512" type="image/png">
@@ -50,14 +50,19 @@ a{color:var(--brand-ink)}
 p,li,h1,h2,h3{overflow-wrap:anywhere}
 .wrap{max-width:1120px;margin:0 auto;padding:0 18px}
 
-/* ---------- Header: the brand and what every app promises ---------- */
-.hero{position:relative;color:var(--linen-text);text-align:center;padding:40px 0 62px;
+/* ---------- Header: the brand, a headline and what every app promises ---------- */
+.hero{position:relative;color:var(--linen-text);
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 11v8M11 15h8' stroke='%23f8f1e6' stroke-opacity='.09' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E"),var(--hero)}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:16px;border-bottom:3px dashed rgba(248,241,230,.42)}
-.mark{width:84px;height:84px;margin:0 auto 16px;border-radius:22px;box-shadow:0 10px 26px -10px rgba(0,0,0,.55)}
-.hero h1{margin:0;font:400 clamp(38px,9vw,66px)/1.08 "Galada","Hind Siliguri",serif;letter-spacing:.01em}
-.by{margin:8px 0 0;font-size:18px}
-.by span{display:block;font-size:15.5px;opacity:.86}
+.topbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;padding-bottom:16px}
+.brand{display:inline-flex;align-items:center;gap:11px;color:var(--linen-text);text-decoration:none;font:400 25px/1.1 "Galada","Hind Siliguri",serif}
+.brand img{width:40px;height:40px;border-radius:11px;box-shadow:0 4px 14px -5px rgba(0,0,0,.55)}
+.navlink{display:inline-block;min-height:44px;padding:10px 18px;border-radius:999px;border:1.5px solid rgba(248,241,230,.5);color:var(--linen-text);text-decoration:none;font-weight:600;font-size:15px;line-height:1.4;transition:background-color .15s ease,color .15s ease}
+.navlink:hover{background:var(--linen-text);color:var(--coffee)}
+@media (max-width:400px){.nav-en{display:none}.brand{font-size:20px;gap:9px}.brand img{width:32px;height:32px;border-radius:9px}.navlink{padding:10px 14px}}
+.intro{text-align:center;padding-top:30px;padding-bottom:72px}
+.hero h1{margin:0 auto;max-width:17em;font:600 clamp(28px,5.4vw,46px)/1.32 "Hind Siliguri",sans-serif;text-wrap:balance}
+.sub{margin:10px 0 0;font-size:clamp(17px,2.2vw,20px);opacity:.88;text-wrap:balance}
 .promises{list-style:none;margin:22px auto 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:40em}
 .promises li{display:inline-block;padding:6px 15px 6px 13px;border-radius:999px;background:rgba(36,20,10,.34);border:1px solid rgba(248,241,230,.34);font-size:15px;line-height:1.4}
 .promises li::before{content:"";display:inline-block;vertical-align:middle;width:6px;height:11px;margin:-6px 11px 0 3px;border:solid var(--linen-text);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
@@ -96,21 +101,31 @@ p,li,h1,h2,h3{overflow-wrap:anywhere}
 .soon-chip{display:inline-block;margin-top:6px;padding:1px 10px;border-radius:999px;border:1.5px dashed var(--stitch);color:var(--muted);font-size:13px;font-weight:600;line-height:1.6}
 
 /* ---------- Footer ---------- */
-footer{border-top:2px dashed var(--stitch);padding:26px 0 42px;text-align:center;color:var(--muted);font-size:15px}
-footer p{margin:6px 0}
+footer{border-top:2px dashed var(--stitch);color:var(--muted);font-size:15px}
+.foot-grid{display:grid;gap:26px 40px;grid-template-columns:minmax(0,1fr);padding-top:34px;padding-bottom:8px}
+@media (min-width:760px){.foot-grid{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr)}}
+footer h2{margin:0 0 10px;color:var(--ink);font:600 16px/1.4 "Hind Siliguri",sans-serif}
+footer p{margin:0 0 12px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:0 0 6px}
 footer a{color:var(--gur);text-underline-offset:3px}
-.sig{display:inline-flex;align-items:center;gap:10px;margin-bottom:6px;color:var(--ink);font:400 22px/1.2 "Galada","Hind Siliguri",serif}
-.sig img{width:30px;height:30px;border-radius:8px}
+.sig{display:inline-flex;align-items:center;gap:10px;color:var(--ink);font:400 24px/1.2 "Galada","Hind Siliguri",serif}
+.sig img{width:32px;height:32px;border-radius:9px}
+.copy{margin-top:22px;padding-top:16px;padding-bottom:34px;border-top:1px solid var(--line);font-size:14px}
+.copy p{margin:0}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}.card:hover{transform:none!important}}
 </style>
 </head>
 <body>
 <header class="hero">
-  <div class="wrap">
-    <img class="mark" src="assets/teatime-crumbles.svg" alt="" width="84" height="84">
-    <h1>Teatime Crumbles</h1>
-    <p class="by">Mohammad Motiur Rahman-এর অ্যাপ <span lang="en">Apps by Mohammad Motiur Rahman</span></p>
+  <div class="wrap topbar">
+    <a class="brand" href="./"><img src="assets/teatime-crumbles.svg" alt="" width="40" height="40"><span lang="en">Teatime Crumbles</span></a>
+    <a class="navlink" href="mailto:mohammadmotiurrahman@gmail.com">যোগাযোগ<span class="nav-en" lang="en"> · Contact</span></a>
+  </div>
+  <div class="wrap intro">
+    <h1>বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ</h1>
+    <p class="sub" lang="en">Thoughtfully made apps for Bangla speakers</p>
     <!-- Every app below keeps these promises. If an app ever breaks one (for example it shows ads), remove that promise here. -->
     <ul class="promises">
       <li>বিনামূল্যে · <span lang="en">Free</span></li>
@@ -120,8 +135,8 @@ footer a{color:var(--gur);text-underline-offset:3px}
   </div>
 </header>
 
-<main class="wrap apps">
-  <h2 class="section-title">অ্যাপ <span lang="en">· Apps</span></h2>
+<main class="wrap apps" id="apps">
+  <h2 class="section-title">আমাদের অ্যাপ <span lang="en">· Our apps</span></h2>
   <div class="grid">
 
   <!-- ===== App: Nakshi Pitha ===== -->
@@ -219,11 +234,29 @@ footer a{color:var(--gur);text-underline-offset:3px}
 </main>
 
 <footer>
-  <div class="wrap">
-    <p class="sig"><img src="assets/teatime-crumbles.svg" alt="" width="30" height="30"><span lang="en">Teatime Crumbles</span></p>
-    <p>যোগাযোগ · <span lang="en">Contact</span>: <a href="mailto:mohammadmotiurrahman@gmail.com">mohammadmotiurrahman@gmail.com</a> · <a href="https://github.com/teatimecrumbles">GitHub</a></p>
-    <p>© 2026 Mohammad Motiur Rahman</p>
+  <div class="wrap foot-grid">
+    <div>
+      <p class="sig"><img src="assets/teatime-crumbles.svg" alt="" width="32" height="32"><span lang="en">Teatime Crumbles</span></p>
+      <p>বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ।<br><span lang="en">Thoughtfully made apps for Bangla speakers.</span></p>
+    </div>
+    <nav>
+      <h2>গোপনীয়তা নীতি <span lang="en">· Privacy policies</span></h2>
+      <!-- Add each new app's privacy policy to this list too. -->
+      <ul>
+        <li><a href="app/nakshipitha/privacy.html">নকশি পিঠা <span lang="en">· Nakshi Pitha</span></a></li>
+        <li><a href="app/bangla-braille/privacy.html">বাংলা ব্রেইল <span lang="en">· Bangla Braille</span></a></li>
+        <li><a href="app/sporshochitro/privacy/">স্পর্শ চিত্র <span lang="en">· Sporsho Chitro</span></a></li>
+        <li><a href="app/baribanao/privacy.html">বাড়ি বানাও <span lang="en">· Bari Banao</span></a></li>
+        <li><a href="app/biyerkhata/privacy.html">বিয়ের খাতা <span lang="en">· Biyer Khata</span></a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>যোগাযোগ <span lang="en">· Contact</span></h2>
+      <p>প্রশ্ন বা মতামত থাকলে ইমেইল করুন।<br><span lang="en">Questions or feedback? Email us.</span></p>
+      <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">ইমেইল করুন · <span lang="en">Email us</span></a>
+    </div>
   </div>
+  <div class="wrap copy"><p>© 2026 Teatime Crumbles</p></div>
 </footer>
 </body>
 </html>
