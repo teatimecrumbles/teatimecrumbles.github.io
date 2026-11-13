@@ -20,10 +20,13 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/bangla-braille/privacy.html   <- Play Console "Privacy policy" URL
   baribanao/               Bari Banao (বাড়ি বানাও): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/baribanao/privacy.html   <- Play Console "Privacy policy" URL
+  biyerkhata/              Biyer Khata (বিয়ের খাতা): the privacy policy and the price file the app downloads (the app itself is private)
+    privacy.html           https://teatimecrumbles.github.io/app/biyerkhata/privacy.html   <- Play Console "Privacy policy" URL
+    prices.json            https://teatimecrumbles.github.io/app/biyerkhata/prices.json    <- read by the app; edit to update prices
   darzistudio/             Darzi Studio (placeholder)
 assets/
-  fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png
-                           fonts and icons used by the hub page (index.html)
+  fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
+  biyerkhata-icon-192.png  fonts and icons used by the hub page (index.html)
 ```
 
 ## Adding another app (for example Darzi Studio)
@@ -67,3 +70,19 @@ Bari Banao is an Android app. Its code, including the web app inside it, lives i
 The app contains a copy of `app/baribanao/privacy.html`, and the app's build **fails if the two differ**. So when the policy changes, edit it here
 and copy the same file to `baribanao/app/src/main/assets/web/privacy.html` in `myapps`. Like the Bangla Braille page, it is self-contained, so the
 same file works on the website and inside the app.
+
+## Biyer Khata: its privacy policy and its price file
+
+Biyer Khata is an Android app (package `bd.biyerkhata.app`). Its code lives in the private repository `teatimecrumbles/myapps`
+(folder `biyerkhata`). Two of its files are published here:
+
+- `app/biyerkhata/privacy.html`: the privacy policy, because Google Play needs a public address for it. The app links to this page
+  from its Privacy note (the address is `BK_PRIVACY_URL` in `biyerkhata/www/config.js` in `myapps`); it does not carry a copy. If the
+  app ever starts handling data differently, update this page before releasing that version.
+- `app/biyerkhata/prices.json`: the price file. Shortly after it opens, the app downloads this file and uses it when its `at` date is
+  newer than the prices it already has. So to send newer prices (gold rates, any item's five price points, paid decorator listings)
+  to everyone with the app, without a new release: edit this file and **raise `at`** (YYYY-MM-DD). Each new file replaces the
+  previous one completely (an item it leaves out goes back to the price built into the app), so keep in it every change you still
+  want. The file explains its fields in `_help`; the item ids are listed in `biyerkhata/README.md` in `myapps`. Check that it is
+  still valid JSON before you commit (the app ignores a file it cannot read), and before the first paid decorator goes in, read
+  "When you add a paid decorator" in `biyerkhata/PUBLISHING.md`.

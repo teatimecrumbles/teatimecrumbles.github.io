@@ -1,0 +1,16 @@
+{
+  "v": 1,
+  "at": "2026-11-11",
+  "gold": {
+    "date": "11 Nov 2026",
+    "rates": {
+      "18": 183883,
+      "21": 214093,
+      "22": 224182
+    }
+  },
+  "items": {},
+  "seen": {},
+  "partners": [],
+  "_help": "Raise \"at\" (YYYY-MM-DD) whenever you change anything; the app only takes a newer pack. gold.rates are taka a bhori (BAJUS). items maps an item id to its five price points, cheapest to top, e.g. \"v_photo_biy\": [7500, 20000, 55000, 110000, 250000]; seen maps an item id to the \"Prices seen\" note. Item ids are listed in README.md. partners lists the decorators shown in \"Ask a decorator for a quote\": {\"name\": \"...\", \"wa\": \"8801XXXXXXXXX\", \"bn\": \"...\", \"area\": \"...\", \"note\": \"...\", \"events\": [\"biye\", \"holud\"]}; only name and wa are required."
+}
