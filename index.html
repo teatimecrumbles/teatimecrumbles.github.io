@@ -23,7 +23,7 @@ header::after{content:"";position:absolute;left:0;right:0;bottom:10px;border-bot
 header h1{font:400 clamp(30px,7vw,44px)/1.1 "Galada","Hind Siliguri",serif;margin:0}
 header p{margin:6px 0 0;opacity:.92}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);vertical-align:middle;margin:0 6px}
-main{max-width:920px;margin:0 auto;padding:26px 16px 50px;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+main{max-width:920px;margin:0 auto;padding:26px 16px 50px;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;position:relative}
 .card::before{content:"";position:absolute;inset:6px;border:2px dashed var(--line);border-radius:12px;pointer-events:none}
 .top{display:flex;gap:14px;align-items:center;position:relative}
