@@ -36,11 +36,15 @@ assets/
 
 ## Themes
 
-The buttons at the top of both hub pages switch between three themes: **Parchment** (the default), **Linen** and **Imperial**.
-Their colours are at the top of `assets/site.css`. The buttons work without any script; `assets/theme.js` only remembers the
-choice, in the visitor's own browser (localStorage, nothing is sent anywhere), so it stays when they reload or switch language,
-and on a first visit it picks Imperial for phones set to dark mode. The pages allow scripts only from this site
-(`script-src 'self'` in their Content-Security-Policy).
+The theme button in the top bar of both hub pages (the palette icon) opens a small menu with three themes: **Parchment**
+(the default: book-page paper, leather-brown buttons, thin gold rules), **Linen** (lighter, white cards) and **Imperial**
+(deep purple with gold). Their colours are at the top of `assets/site.css`. The menu is a plain `<details>` element with radio
+buttons, so it opens and the themes switch without any script; `assets/theme.js` only remembers the choice in the visitor's
+own browser (localStorage, nothing is sent anywhere), closes the menu after a pick, and on a first visit picks Imperial for
+phones set to dark mode. The pages allow scripts only from this site (`script-src 'self'` in their Content-Security-Policy).
+
+Fonts (all in `assets/fonts/`, under the SIL Open Font License; the licences are next to them): Tiro Bangla for the headline
+and titles, Hind Siliguri for the text.
 
 ## Adding another app (for example Darzi Studio)
 

@@ -7,7 +7,7 @@
 <meta name="description" content="Teatime Crumbles: thoughtfully made apps for Bangla speakers — Nakshi Pitha Maker, Bangla Braille, Sporsho Chitro, Bari Banao and Biyer Khata.">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f2e9d5">
+<meta name="theme-color" content="#f4ecdb">
 <link rel="canonical" href="https://teatimecrumbles.github.io/en/">
 <link rel="alternate" hreflang="bn" href="https://teatimecrumbles.github.io/">
 <link rel="alternate" hreflang="en" href="https://teatimecrumbles.github.io/en/">
@@ -27,29 +27,24 @@
 </head>
 <body>
 <!-- The English page. The same page in Bangla is ../index.html: when you change one, change the other too. -->
-<header>
-  <div class="utility">
-    <div class="wrap util">
-      <fieldset class="themes">
-        <legend class="vh">Choose a theme</legend>
-        <span class="themes-label" aria-hidden="true">Theme</span>
-        <label class="theme-opt"><input type="radio" name="theme" value="linen" id="theme-linen"><span class="sw sw-linen" aria-hidden="true"></span><span class="tname">Linen</span></label>
-        <label class="theme-opt"><input type="radio" name="theme" value="parchment" id="theme-parchment" checked><span class="sw sw-parchment" aria-hidden="true"></span><span class="tname">Parchment</span></label>
-        <label class="theme-opt"><input type="radio" name="theme" value="imperial" id="theme-imperial"><span class="sw sw-imperial" aria-hidden="true"></span><span class="tname">Imperial</span></label>
-      </fieldset>
-      <script src="../assets/theme.js"></script>
-      <a class="lang-switch" href="../" hreflang="bn" lang="bn"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.6 5.4 3.6 8.5s-1.2 5.9-3.6 8.5c-2.4-2.6-3.6-5.4-3.6-8.5s1.2-5.9 3.6-8.5z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>বাংলা</a>
-    </div>
-  </div>
-  <div class="topbar">
-    <div class="wrap bar">
-      <a class="brand" href="./"><img src="../assets/teatime-crumbles.svg" alt="" width="38" height="38"><span>Teatime Crumbles</span></a>
-      <nav class="nav" aria-label="Main menu">
-        <a class="link" href="#apps">Apps</a>
-        <a class="link" href="#privacy">Privacy</a>
-        <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">Contact</a>
-      </nav>
-    </div>
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="./"><img src="../assets/teatime-crumbles.svg" alt="" width="36" height="36"><span>Teatime Crumbles</span></a>
+    <nav class="links" aria-label="Main menu"><a href="#apps">Apps</a><a href="#privacy">Privacy</a></nav>
+    <a class="tool" href="../" hreflang="bn" lang="bn" aria-label="বাংলা"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.6 5.4 3.6 8.5s-1.2 5.9-3.6 8.5c-2.4-2.6-3.6-5.4-3.6-8.5s1.2-5.9 3.6-8.5z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="long">বাংলা</span><span class="short" aria-hidden="true">বাং</span></a>
+    <details class="theme">
+      <summary class="tool" aria-label="Choose a theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.3 0 1.9-.8 1.9-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.7 1.8-1.7h2.1a4.2 4.2 0 0 0 4.2-4.2C21 6.9 17 3.5 12 3.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7.6" cy="11.4" r="1.25" fill="currentColor"/><circle cx="10.3" cy="7.7" r="1.25" fill="currentColor"/><circle cx="14.7" cy="7.9" r="1.25" fill="currentColor"/></svg><span class="long">Theme</span></summary>
+      <div class="menu">
+        <fieldset>
+          <legend>Choose a theme</legend>
+          <label class="opt"><input type="radio" name="theme" value="parchment" id="theme-parchment" checked><span class="pv pv-parchment" aria-hidden="true"></span><span class="nm">Parchment<small>Book-page colours</small></span></label>
+          <label class="opt"><input type="radio" name="theme" value="linen" id="theme-linen"><span class="pv pv-linen" aria-hidden="true"></span><span class="nm">Linen<small>Light and airy</small></span></label>
+          <label class="opt"><input type="radio" name="theme" value="imperial" id="theme-imperial"><span class="pv pv-imperial" aria-hidden="true"></span><span class="nm">Imperial<small>Deep purple and gold</small></span></label>
+        </fieldset>
+      </div>
+    </details>
+    <script src="../assets/theme.js"></script>
+    <a class="btn small contact" href="mailto:mohammadmotiurrahman@gmail.com">Contact</a>
   </div>
 </header>
 
