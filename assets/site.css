@@ -103,11 +103,10 @@ p,li,h1,h2,h3{overflow-wrap:anywhere}
 /* ---------- Hero ---------- */
 .hero{padding:76px 0 84px}
 .hero-grid{display:grid;gap:48px;align-items:center;grid-template-columns:minmax(0,1fr)}
-@media (min-width:920px){.hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px}}
-.hero h1{margin:0;font:400 clamp(46px,7.4vw,86px)/1.02 "Tiro Bangla",Georgia,"Times New Roman",serif;letter-spacing:-.015em}
+@media (min-width:920px){.hero-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:56px}}
+.hero h1{margin:0;font:400 clamp(30px,4.4vw,54px)/1.2 "Tiro Bangla",Georgia,"Times New Roman",serif;letter-spacing:-.01em;text-wrap:balance}
 .hero h1::after{content:"";display:block;width:64px;height:2px;margin-top:24px;background:var(--gilt)}
-.slogan{margin:22px 0 0;font:600 clamp(20px,2.4vw,26px)/1.4 "Hind Siliguri",sans-serif;text-wrap:balance}
-.lead{margin:8px 0 0;color:var(--muted);font-size:clamp(16px,1.7vw,19px);text-wrap:balance}
+.lead{margin:20px 0 0;color:var(--muted);font-size:clamp(17px,1.9vw,21px);text-wrap:balance}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 /* the app icons on a small stack of pages */
 .showcase{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;width:calc(100% - 18px);max-width:440px;padding:30px;border-radius:20px;background:var(--surface);border:1px solid var(--line);
