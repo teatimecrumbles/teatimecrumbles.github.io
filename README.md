@@ -8,7 +8,8 @@ This repository is only the website. The source code of the apps is **private**:
 ## Layout
 
 ```
-index.html                 app hub (lists every app)
+index.html                 app hub in Bangla (lists every app); the default page
+en/index.html              the same app hub in English (the language button at the top switches between the two)
 404.html                   "page not found"
 .nojekyll                  serve files as-is (no Jekyll processing)
 app/
@@ -27,6 +28,7 @@ app/
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png  fonts and icons used by the hub page (index.html)
+  site.css                 the look of both hub pages (index.html and en/index.html)
   teatime-crumbles.svg     the site's own mark (header, footer, browser tab); teatime-crumbles-180.png and -512.png are
                            PNG copies of it for phones' home screens and for link previews
 ```
@@ -37,10 +39,11 @@ assets/
    (`io.github.teatimecrumbles.<appname>`).
 2. Write a **separate** `app/<appname>/privacy.html` that describes what *that* app really does with data. Do not copy the Nakshi Pitha policy
    unless the other app also collects nothing, has no ads, no analytics and no sign-in.
-3. Add it to `index.html` in three places: a card (copy an `<article class="card">` block and change its category, texts and
-   links), its icon in the row of icons at the top of the page (`class="showcase"`), and its privacy policy in the footer's list.
-4. Set its price on the card: `<span class="price">বিনামূল্যে · Free</span>` for a free app, or
-   `<span class="price paid">পেইড · Paid</span>` for a paid one.
+3. Add it to **both** hub pages, `index.html` (Bangla) and `en/index.html` (English), in three places each: a card (copy an
+   `<article class="card">` block and change its category, texts and links), its icon in the row of icons at the top of the page
+   (`class="showcase"`), and its privacy policy in the footer's list. In `en/index.html` every link starts with `../`.
+4. Set its price on the card: `<span class="price">বিনামূল্যে</span>` / `<span class="price">Free</span>` for a free app, or
+   `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
 
