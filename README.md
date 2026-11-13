@@ -37,10 +37,10 @@ assets/
    (`io.github.teatimecrumbles.<appname>`).
 2. Write a **separate** `app/<appname>/privacy.html` that describes what *that* app really does with data. Do not copy the Nakshi Pitha policy
    unless the other app also collects nothing, has no ads, no analytics and no sign-in.
-3. Add a card for it in `index.html` (copy the `<article class="card">` block), and add its privacy policy to the list in the
-   page's footer.
-4. The header of `index.html` promises that every app is free, has no ads and needs no sign-in. If the new app breaks one of these,
-   remove that promise there.
+3. Add it to `index.html` in three places: a card (copy an `<article class="card">` block and change its category, texts and
+   links), its icon in the row of icons at the top of the page (`class="showcase"`), and its privacy policy in the footer's list.
+4. Set its price on the card: `<span class="price">বিনামূল্যে · Free</span>` for a free app, or
+   `<span class="price paid">পেইড · Paid</span>` for a paid one.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
 
