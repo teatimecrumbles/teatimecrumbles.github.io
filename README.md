@@ -27,9 +27,11 @@ app/
   darzistudio/             Darzi Studio (দর্জি স্টুডিও): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/darzistudio/privacy.html   <- Play Console "Privacy policy" URL
     index.html             an earlier placeholder page ("Hello"); nothing links to it
+  islamicpatternstudio/    Islamic Pattern Studio (Pattern Studio on the phone): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/islamicpatternstudio/privacy.html   <- Play Console "Privacy policy" URL
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
-  biyerkhata-icon-192.png, darzistudio-icon-192.png  fonts and icons used by the hub page (index.html)
+  biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png  fonts and icons used by the hub page (index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
   teatime-crumbles.svg     the site's own mark (header, footer, browser tab); teatime-crumbles-180.png and -512.png are
@@ -62,7 +64,8 @@ and titles, Hind Siliguri for the text.
    `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one, or
    `<span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>` / `<span class="price paid">Free · Pro in-app</span>` for a free
    app with an in-app purchase (like Darzi Studio).
-   The row of icons holds two rows of three; for a seventh app, see the comment next to `.showcase` in `assets/site.css`.
+   The row of icons holds two rows of three and a seventh icon centred below; for an eighth app, see the comment next to
+   `.showcase` in `assets/site.css`.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
 
@@ -123,3 +126,15 @@ address for it. The app links to this page from its Pro screen and its Style pan
 `darzistudio/app/src/main/assets/www/index.html` in `myapps`); it does not carry a copy. The app's release build checks that this
 page is online. Like the Bangla Braille page, it is self-contained (no scripts, fonts or other files), in English, Bangla, Hindi
 and Urdu. If the app ever starts handling data differently, update this page before releasing that version.
+
+## Islamic Pattern Studio and its privacy policy
+
+Islamic Pattern Studio is an Android app (package `io.github.teatimecrumbles.islamicpatternstudio`; on the phone it is called
+Pattern Studio): Islamic geometric colouring, free to download, with one optional in-app purchase, Pattern Studio Pro, sold
+through Google Play. Its code lives in the private repository `teatimecrumbles/myapps` (folder `islamicpatternstudio`). Only the
+privacy policy is published here, at `app/islamicpatternstudio/privacy.html`, because Google Play needs a public address for
+it. The app links to this page from its Pro sheet and its About sheet (the address is `PRIVACY_URL` in
+`islamicpatternstudio/app/src/main/assets/www/index.html` in `myapps`); it does not carry a copy. Every build checks that this
+page is online, and a release build fails if it is not. Like the Bangla Braille page, it is self-contained (no scripts, fonts
+or other files), in English and Bangla. If the app ever starts handling data differently, update this page before releasing
+that version.
