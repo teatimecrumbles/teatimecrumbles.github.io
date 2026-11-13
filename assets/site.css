@@ -1,20 +1,32 @@
 /* The look of the app hub: index.html (Bangla) and en/index.html (English) both use this file.
-   Parchment page, linen-white cards, coffee for buttons and links; deep coffee in dark mode. */
+   Three themes, chosen with the buttons at the top of the page: Parchment (the default), Linen and Imperial.
+   The buttons are radio inputs, so the switching below works without scripts; assets/theme.js only remembers the choice. */
 @font-face{font-family:"Hind Siliguri";font-weight:400;font-display:swap;src:url(fonts/hind-siliguri-bengali-400-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
 @font-face{font-family:"Hind Siliguri";font-weight:400;font-display:swap;src:url(fonts/hind-siliguri-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Hind Siliguri";font-weight:600;font-display:swap;src:url(fonts/hind-siliguri-bengali-600-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
 @font-face{font-family:"Hind Siliguri";font-weight:600;font-display:swap;src:url(fonts/hind-siliguri-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
+/* Parchment (the default): parchment page, linen-white cards, coffee buttons and links */
 :root{
+  color-scheme:light;
   --bg:#f2e9d5; --bg-2:#eadfc6; --surface:#fbf7ee; --ink:#2b1f17; --muted:#625345; --line:#dccdae; --line-soft:#e8ddc6;
   --accent:#6f4e37; --accent-ink:#5a3d2b; --on-accent:#fbf7ee; --chip:#ebe0c8; --focus:#a5552a;
-  --shadow:0 1px 2px rgba(64,44,24,.06),0 12px 28px -18px rgba(64,44,24,.35);
+  --shadow:0 1px 2px rgba(64,44,24,.06),0 12px 28px -18px rgba(64,44,24,.35); --icon-shadow:rgba(40,24,10,.6);
 }
-@media (prefers-color-scheme:dark){:root{
-  --bg:#1b1410; --bg-2:#221913; --surface:#261c16; --ink:#f1e7d6; --muted:#c2b19c; --line:#3c2e24; --line-soft:#33271e;
-  --accent:#d8b07e; --accent-ink:#e2bd8e; --on-accent:#1b1410; --chip:#3a2c21; --focus:#e09a64;
-  --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 28px -18px rgba(0,0,0,.9);
-}}
+/* Linen: light and airy, white cards, soft taupe */
+html:has(#theme-linen:checked){
+  color-scheme:light;
+  --bg:#faf6ef; --bg-2:#f2ece2; --surface:#ffffff; --ink:#2a2622; --muted:#5f5850; --line:#e4dccf; --line-soft:#eee8de;
+  --accent:#7d5f46; --accent-ink:#664c37; --on-accent:#ffffff; --chip:#f0e9de; --focus:#a5552a;
+  --shadow:0 1px 2px rgba(50,40,30,.05),0 12px 28px -20px rgba(50,40,30,.28); --icon-shadow:rgba(40,30,20,.45);
+}
+/* Imperial: deep imperial purple with gold */
+html:has(#theme-imperial:checked){
+  color-scheme:dark;
+  --bg:#1b1222; --bg-2:#22172b; --surface:#2a1d34; --ink:#f4ecdc; --muted:#cdbfd6; --line:#3d2c4a; --line-soft:#33253f;
+  --accent:#d8b25a; --accent-ink:#e8c878; --on-accent:#1b1222; --chip:#3a2948; --focus:#f0c674;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 14px 30px -18px rgba(0,0,0,.9); --icon-shadow:rgba(0,0,0,.8);
+}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Hind Siliguri","Noto Sans Bengali","Nirmala UI",system-ui,sans-serif}
@@ -29,7 +41,25 @@ p,li,h1,h2,h3{overflow-wrap:anywhere}
 .btn.primary{background:var(--accent);color:var(--on-accent)}
 .btn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
 
-/* ---------- Top bar: brand, links, language button, contact ---------- */
+.vh{position:absolute!important;width:1px;height:1px;margin:0;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Theme and language bar (the very top) ---------- */
+.utility{background:var(--bg-2);border-bottom:1px solid var(--line);color:var(--muted);font-size:14px}
+.util{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:54px}
+.themes{display:flex;align-items:center;gap:4px;min-width:0;margin:0;padding:0;border:0}
+.themes-label{margin-right:6px;font-weight:600}
+.theme-opt{position:relative;display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:6px 12px 6px 8px;border:1px solid transparent;border-radius:999px;color:var(--ink);line-height:1.2;cursor:pointer}
+.theme-opt input{position:absolute;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
+.theme-opt:hover{border-color:var(--line)}
+.theme-opt:has(input:checked){border-color:var(--accent);background:var(--surface);font-weight:600}
+.theme-opt:has(input:focus-visible){outline:3px solid var(--focus);outline-offset:2px}
+.sw{flex:none;width:20px;height:20px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.28)}
+.sw-linen{background:linear-gradient(135deg,#faf6ef 0 55%,#7d5f46 55%)}
+.sw-parchment{background:linear-gradient(135deg,#f2e9d5 0 55%,#6f4e37 55%)}
+.sw-imperial{background:linear-gradient(135deg,#1b1222 0 55%,#d8b25a 55%)}
+@media (max-width:620px){.tname{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.theme-opt{padding:6px 9px}.sw{width:24px;height:24px}}
+
+/* ---------- Top bar: brand, links, contact ---------- */
 .topbar{border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:72px}
 .brand{display:inline-flex;align-items:center;gap:11px;color:var(--ink);text-decoration:none;font-weight:600;font-size:19px;line-height:1.2}
@@ -37,23 +67,23 @@ p,li,h1,h2,h3{overflow-wrap:anywhere}
 .nav{display:flex;align-items:center;gap:4px}
 .nav .link{display:none;padding:10px 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:15px;line-height:1.4}
 .nav .link:hover{background:var(--bg-2)}
-.lang-switch{display:inline-flex;align-items:center;gap:7px;min-height:44px;margin-left:6px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;line-height:1.4}
+.lang-switch{display:inline-flex;align-items:center;gap:7px;flex:none;min-height:40px;padding:7px 13px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;line-height:1.4}
 .lang-switch svg{width:18px;height:18px;color:var(--accent-ink);flex:none}
 .lang-switch:hover{border-color:var(--accent)}
 .nav .btn{padding:9px 16px;margin-left:8px}
 @media (min-width:860px){.nav .link{display:inline-block}}
-@media (max-width:560px){.nav .btn{display:none}}
-@media (max-width:360px){.wrap{padding:0 16px}.bar{gap:10px}.brand{font-size:16px;gap:8px}.brand img{width:30px;height:30px;border-radius:8px}.lang-switch{margin-left:0;padding:9px 10px;gap:6px}}
+@media (max-width:360px){.wrap{padding:0 16px}.bar{gap:10px}.brand{font-size:16px;gap:8px}.brand img{width:30px;height:30px;border-radius:8px}.themes-label{display:none}}
 
 /* ---------- Hero ---------- */
 .hero{padding:56px 0 64px}
 .hero-grid{display:grid;gap:40px;align-items:center;grid-template-columns:minmax(0,1fr)}
 @media (min-width:900px){.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px}}
-.hero h1{margin:0;font:600 clamp(30px,4.8vw,50px)/1.25 "Hind Siliguri",sans-serif;text-wrap:balance}
-.lead{margin:14px 0 0;font-size:clamp(17px,2vw,20px);color:var(--muted);text-wrap:balance}
+.hero h1{margin:0;font:600 clamp(40px,6.2vw,66px)/1.08 "Hind Siliguri",sans-serif;letter-spacing:-.01em;text-wrap:balance}
+.slogan{margin:16px 0 0;font:600 clamp(20px,2.5vw,27px)/1.4 "Hind Siliguri",sans-serif;text-wrap:balance}
+.lead{margin:8px 0 0;font-size:clamp(16px,1.8vw,19px);color:var(--muted);text-wrap:balance}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .showcase{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;max-width:440px;padding:28px;border-radius:24px;background:var(--bg-2);border:1px solid var(--line)}
-.showcase img{grid-column:span 2;width:100%;max-width:96px;height:auto;margin:0 auto;border-radius:22%;box-shadow:0 10px 24px -14px rgba(40,24,10,.6)}
+.showcase img{grid-column:span 2;width:100%;max-width:96px;height:auto;margin:0 auto;border-radius:22%;box-shadow:0 10px 24px -14px var(--icon-shadow)}
 .showcase img:nth-child(4){grid-column:2 / span 2}
 @media (max-width:600px){.showcase{max-width:320px;padding:20px;gap:14px}.hero{padding:40px 0 48px}}
 

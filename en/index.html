@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Teatime Crumbles — Thoughtfully made apps for Bangla speakers</title>
 <meta name="description" content="Teatime Crumbles: thoughtfully made apps for Bangla speakers — Nakshi Pitha Maker, Bangla Braille, Sporsho Chitro, Bari Banao and Biyer Khata.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f2e9d5" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1b1410" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f2e9d5">
 <link rel="canonical" href="https://teatimecrumbles.github.io/en/">
 <link rel="alternate" hreflang="bn" href="https://teatimecrumbles.github.io/">
 <link rel="alternate" hreflang="en" href="https://teatimecrumbles.github.io/en/">
@@ -28,15 +27,29 @@
 </head>
 <body>
 <!-- The English page. The same page in Bangla is ../index.html: when you change one, change the other too. -->
-<header class="topbar">
-  <div class="wrap bar">
-    <a class="brand" href="./"><img src="../assets/teatime-crumbles.svg" alt="" width="38" height="38"><span>Teatime Crumbles</span></a>
-    <nav class="nav" aria-label="Main menu">
-      <a class="link" href="#apps">Apps</a>
-      <a class="link" href="#privacy">Privacy</a>
+<header>
+  <div class="utility">
+    <div class="wrap util">
+      <fieldset class="themes">
+        <legend class="vh">Choose a theme</legend>
+        <span class="themes-label" aria-hidden="true">Theme</span>
+        <label class="theme-opt"><input type="radio" name="theme" value="linen" id="theme-linen"><span class="sw sw-linen" aria-hidden="true"></span><span class="tname">Linen</span></label>
+        <label class="theme-opt"><input type="radio" name="theme" value="parchment" id="theme-parchment" checked><span class="sw sw-parchment" aria-hidden="true"></span><span class="tname">Parchment</span></label>
+        <label class="theme-opt"><input type="radio" name="theme" value="imperial" id="theme-imperial"><span class="sw sw-imperial" aria-hidden="true"></span><span class="tname">Imperial</span></label>
+      </fieldset>
+      <script src="../assets/theme.js"></script>
       <a class="lang-switch" href="../" hreflang="bn" lang="bn"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.6 5.4 3.6 8.5s-1.2 5.9-3.6 8.5c-2.4-2.6-3.6-5.4-3.6-8.5s1.2-5.9 3.6-8.5z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>বাংলা</a>
-      <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">Contact</a>
-    </nav>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="./"><img src="../assets/teatime-crumbles.svg" alt="" width="38" height="38"><span>Teatime Crumbles</span></a>
+      <nav class="nav" aria-label="Main menu">
+        <a class="link" href="#apps">Apps</a>
+        <a class="link" href="#privacy">Privacy</a>
+        <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">Contact</a>
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -44,8 +57,9 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1>Thoughtfully made apps for Bangla speakers</h1>
-        <p class="lead">Simple apps for learning, design and planning, in Bangla.</p>
+        <h1>Teatime Crumbles</h1>
+        <p class="slogan">Thoughtfully made apps for Bangla speakers</p>
+        <p class="lead">For learning, design and planning — simply, in Bangla.</p>
         <div class="cta">
           <a class="btn primary" href="#apps">See our apps</a>
           <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">Contact</a>

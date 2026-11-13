@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Teatime Crumbles — বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ</title>
 <meta name="description" content="Teatime Crumbles: বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ — নকশি পিঠা, বাংলা ব্রেইল, স্পর্শ চিত্র, বাড়ি বানাও ও বিয়ের খাতা।">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f2e9d5" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1b1410" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f2e9d5">
 <link rel="canonical" href="https://teatimecrumbles.github.io/">
 <link rel="alternate" hreflang="bn" href="https://teatimecrumbles.github.io/">
 <link rel="alternate" hreflang="en" href="https://teatimecrumbles.github.io/en/">
@@ -28,15 +27,29 @@
 </head>
 <body>
 <!-- The Bangla page. The same page in English is en/index.html: when you change one, change the other too. -->
-<header class="topbar">
-  <div class="wrap bar">
-    <a class="brand" href="./"><img src="assets/teatime-crumbles.svg" alt="" width="38" height="38"><span lang="en">Teatime Crumbles</span></a>
-    <nav class="nav" aria-label="প্রধান মেনু">
-      <a class="link" href="#apps">অ্যাপ</a>
-      <a class="link" href="#privacy">গোপনীয়তা</a>
+<header>
+  <div class="utility">
+    <div class="wrap util">
+      <fieldset class="themes">
+        <legend class="vh">থিম বাছুন</legend>
+        <span class="themes-label" aria-hidden="true">থিম</span>
+        <label class="theme-opt"><input type="radio" name="theme" value="linen" id="theme-linen"><span class="sw sw-linen" aria-hidden="true"></span><span class="tname">লিনেন</span></label>
+        <label class="theme-opt"><input type="radio" name="theme" value="parchment" id="theme-parchment" checked><span class="sw sw-parchment" aria-hidden="true"></span><span class="tname">পার্চমেন্ট</span></label>
+        <label class="theme-opt"><input type="radio" name="theme" value="imperial" id="theme-imperial"><span class="sw sw-imperial" aria-hidden="true"></span><span class="tname">রাজকীয়</span></label>
+      </fieldset>
+      <script src="assets/theme.js"></script>
       <a class="lang-switch" href="en/" hreflang="en" lang="en"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.6 5.4 3.6 8.5s-1.2 5.9-3.6 8.5c-2.4-2.6-3.6-5.4-3.6-8.5s1.2-5.9 3.6-8.5z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>English</a>
-      <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">যোগাযোগ</a>
-    </nav>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="./"><img src="assets/teatime-crumbles.svg" alt="" width="38" height="38"><span lang="en">Teatime Crumbles</span></a>
+      <nav class="nav" aria-label="প্রধান মেনু">
+        <a class="link" href="#apps">অ্যাপ</a>
+        <a class="link" href="#privacy">গোপনীয়তা</a>
+        <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">যোগাযোগ</a>
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -44,8 +57,9 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1>বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ</h1>
-        <p class="lead">শেখা, নকশা আর পরিকল্পনার জন্য সহজ অ্যাপ — বাংলায়।</p>
+        <h1 lang="en">Teatime Crumbles</h1>
+        <p class="slogan">বাংলাভাষীদের জন্য যত্নে তৈরি অ্যাপ</p>
+        <p class="lead">শেখা, নকশা আর পরিকল্পনার কাজে — সহজভাবে, বাংলায়।</p>
         <div class="cta">
           <a class="btn primary" href="#apps">অ্যাপগুলো দেখুন</a>
           <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">যোগাযোগ</a>

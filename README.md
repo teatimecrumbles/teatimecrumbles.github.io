@@ -28,10 +28,19 @@ app/
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png  fonts and icons used by the hub page (index.html)
-  site.css                 the look of both hub pages (index.html and en/index.html)
+  site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
+  theme.js                 remembers which theme a visitor picked (see "Themes" below)
   teatime-crumbles.svg     the site's own mark (header, footer, browser tab); teatime-crumbles-180.png and -512.png are
                            PNG copies of it for phones' home screens and for link previews
 ```
+
+## Themes
+
+The buttons at the top of both hub pages switch between three themes: **Parchment** (the default), **Linen** and **Imperial**.
+Their colours are at the top of `assets/site.css`. The buttons work without any script; `assets/theme.js` only remembers the
+choice, in the visitor's own browser (localStorage, nothing is sent anywhere), so it stays when they reload or switch language,
+and on a first visit it picks Imperial for phones set to dark mode. The pages allow scripts only from this site
+(`script-src 'self'` in their Content-Security-Policy).
 
 ## Adding another app (for example Darzi Studio)
 
