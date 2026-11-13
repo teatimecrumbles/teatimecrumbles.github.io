@@ -1,0 +1,17 @@
+# Repository-wide safety net. Folder-specific rules live next to the code
+# (this repository only holds the website; the apps' source code is in a private repository).
+
+# Signing material and secrets: NEVER commit these
+*.jks
+*.keystore
+keystore.properties
+upload-keystore*
+.env
+.env.*
+
+# OS and editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
