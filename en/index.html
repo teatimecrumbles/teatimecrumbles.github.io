@@ -65,6 +65,7 @@
         <img src="../assets/sporshochitro-icon-192.png" alt="" width="96" height="96">
         <img src="../assets/baribanao-icon-192.png" alt="" width="96" height="96">
         <img src="../assets/biyerkhata-icon-192.png" alt="" width="96" height="96">
+        <img src="../assets/darzistudio-icon-192.png" alt="" width="96" height="96">
       </div>
     </div>
   </section>
@@ -74,7 +75,8 @@
       <div class="section-head"><h2 id="apps-h">Our apps</h2>
         <!-- Remove this line once the apps are on Google Play; each card then gets its own Google Play button. -->
         <p class="section-note">All apps are coming soon to Google Play.</p></div>
-      <!-- Price on each card: <span class="price">Free</span> for a free app, <span class="price paid">Paid</span> for a paid one. -->
+      <!-- Price on each card: <span class="price">Free</span> for a free app, <span class="price paid">Paid</span> for a paid one,
+           <span class="price paid">Free · Pro in-app</span> for a free app with an in-app purchase. -->
       <div class="grid">
 
       <!-- ===== App: Nakshi Pitha ===== -->
@@ -162,12 +164,21 @@
         </div>
       </article>
 
-      <!-- ===== App: Darzi Studio (not out yet). When it is ready, make it a normal card like the ones above:
-           remove "upcoming", add its icon, category, description and a "foot" with its price and buttons. ===== -->
-      <article class="card upcoming" id="darzistudio">
+      <!-- ===== App: Darzi Studio ===== -->
+      <!-- Free to download; Darzi Pro is a one-time in-app purchase through Google Play. -->
+      <article class="card" id="darzistudio">
         <div class="head">
-          <svg class="icon" viewBox="0 0 72 72" width="64" height="64" aria-hidden="true"><rect width="72" height="72" rx="18" fill="#8a4a12"/><path d="M18 54 54 18" stroke="#f7f1e3" stroke-width="4" stroke-linecap="round"/><ellipse cx="50" cy="22" rx="3.2" ry="1.6" transform="rotate(-45 50 22)" fill="#8a4a12"/><path d="M50 22c10 8-6 14-14 22s-6 16 6 14" fill="none" stroke="#f42a41" stroke-width="2.4" stroke-dasharray="5 4" stroke-linecap="round"/></svg>
-          <div><p class="cat">Coming soon</p><h3>Darzi Studio</h3></div>
+          <img class="icon" src="../assets/darzistudio-icon-192.png" alt="" width="64" height="64">
+          <div><p class="cat">Art &amp; Design</p><h3>Darzi Studio: Dress Designer</h3></div>
+        </div>
+        <p class="text">Design a salwar kameez, saree or lehenga part by part and send your tailor a picture. Darzi Pro, a one-time purchase, adds the tailor sheet and the fabric calculator. Works offline; no ads, no sign-in.</p>
+        <div class="foot">
+          <span class="price paid">Free · Pro in-app</span>
+          <div class="actions">
+            <!-- After the app is live on Google Play, add before the privacy link:
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.darzistudio">Google Play</a> -->
+            <a class="btn small" href="../app/darzistudio/privacy.html">Privacy policy</a>
+          </div>
         </div>
       </article>
 

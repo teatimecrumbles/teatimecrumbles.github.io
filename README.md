@@ -24,10 +24,12 @@ app/
   biyerkhata/              Biyer Khata (বিয়ের খাতা): the privacy policy and the price file the app downloads (the app itself is private)
     privacy.html           https://teatimecrumbles.github.io/app/biyerkhata/privacy.html   <- Play Console "Privacy policy" URL
     prices.json            https://teatimecrumbles.github.io/app/biyerkhata/prices.json    <- read by the app; edit to update prices
-  darzistudio/             Darzi Studio (placeholder)
+  darzistudio/             Darzi Studio (দর্জি স্টুডিও): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/darzistudio/privacy.html   <- Play Console "Privacy policy" URL
+    index.html             an earlier placeholder page ("Hello"); nothing links to it
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
-  biyerkhata-icon-192.png  fonts and icons used by the hub page (index.html)
+  biyerkhata-icon-192.png, darzistudio-icon-192.png  fonts and icons used by the hub page (index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
   teatime-crumbles.svg     the site's own mark (header, footer, browser tab); teatime-crumbles-180.png and -512.png are
@@ -56,8 +58,11 @@ and titles, Hind Siliguri for the text.
    `<article class="card">` block and change its category, texts and links), its icon in the row of icons at the top of the page
    (`class="showcase"`). The card's privacy-policy button is the page's only link to the policy. In `en/index.html` every
    link starts with `../`.
-4. Set its price on the card: `<span class="price">বিনামূল্যে</span>` / `<span class="price">Free</span>` for a free app, or
-   `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one.
+4. Set its price on the card: `<span class="price">বিনামূল্যে</span>` / `<span class="price">Free</span>` for a free app,
+   `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one, or
+   `<span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>` / `<span class="price paid">Free · Pro in-app</span>` for a free
+   app with an in-app purchase (like Darzi Studio).
+   The row of icons holds two rows of three; for a seventh app, see the comment next to `.showcase` in `assets/site.css`.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
 
@@ -108,3 +113,13 @@ Biyer Khata is an Android app (package `bd.biyerkhata.app`). Its code lives in t
   want. The file explains its fields in `_help`; the item ids are listed in `biyerkhata/README.md` in `myapps`. Check that it is
   still valid JSON before you commit (the app ignores a file it cannot read), and before the first paid decorator goes in, read
   "When you add a paid decorator" in `biyerkhata/PUBLISHING.md`.
+
+## Darzi Studio and its privacy policy
+
+Darzi Studio is an Android app (package `io.github.teatimecrumbles.darzistudio`): free to download, with one optional in-app
+purchase, Darzi Pro, sold through Google Play. Its code lives in the private repository `teatimecrumbles/myapps` (folder
+`darzistudio`). Only the privacy policy is published here, at `app/darzistudio/privacy.html`, because Google Play needs a public
+address for it. The app links to this page from its Pro screen and its Style panel (the address is `PRIVACY_URL` in
+`darzistudio/app/src/main/assets/www/index.html` in `myapps`); it does not carry a copy. The app's release build checks that this
+page is online. Like the Bangla Braille page, it is self-contained (no scripts, fonts or other files), in English, Bangla, Hindi
+and Urdu. If the app ever starts handling data differently, update this page before releasing that version.
