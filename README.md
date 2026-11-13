@@ -18,9 +18,12 @@ app/
     privacy/index.html     https://teatimecrumbles.github.io/app/sporshochitro/privacy/   <- Play Console "Privacy policy" URL
   bangla-braille/          Bangla Braille (বাংলা ব্রেইল): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/bangla-braille/privacy.html   <- Play Console "Privacy policy" URL
+  baribanao/               Bari Banao (বাড়ি বানাও): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/baribanao/privacy.html   <- Play Console "Privacy policy" URL
   darzistudio/             Darzi Studio (placeholder)
 assets/
-  fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png   fonts and icons used by the hub page (index.html)
+  fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png
+                           fonts and icons used by the hub page (index.html)
 ```
 
 ## Adding another app (for example Darzi Studio)
@@ -55,3 +58,12 @@ Bangla Braille is an Android app. Its code, including the web app inside it, liv
 The app contains a copy of `app/bangla-braille/privacy.html`, and the app's build **fails if the two differ**. So when the policy changes, edit it here
 and copy the same file to `bangla-braille/app/src/main/assets/privacy.html` in `myapps`. The page is self-contained (no fonts, scripts or links
 to other files in this folder), so the same file works on the website and inside the app.
+
+## Bari Banao and its privacy policy
+
+Bari Banao is an Android app. Its code, including the web app inside it, lives in the private repository `teatimecrumbles/myapps`
+(folder `baribanao`). Only the privacy policy is published here, because Google Play needs a public address for it.
+
+The app contains a copy of `app/baribanao/privacy.html`, and the app's build **fails if the two differ**. So when the policy changes, edit it here
+and copy the same file to `baribanao/app/src/main/assets/web/privacy.html` in `myapps`. Like the Bangla Braille page, it is self-contained, so the
+same file works on the website and inside the app.
