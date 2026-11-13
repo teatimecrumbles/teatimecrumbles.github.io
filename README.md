@@ -52,9 +52,10 @@ and titles, Hind Siliguri for the text.
    (`io.github.teatimecrumbles.<appname>`).
 2. Write a **separate** `app/<appname>/privacy.html` that describes what *that* app really does with data. Do not copy the Nakshi Pitha policy
    unless the other app also collects nothing, has no ads, no analytics and no sign-in.
-3. Add it to **both** hub pages, `index.html` (Bangla) and `en/index.html` (English), in three places each: a card (copy an
+3. Add it to **both** hub pages, `index.html` (Bangla) and `en/index.html` (English), in two places each: a card (copy an
    `<article class="card">` block and change its category, texts and links), its icon in the row of icons at the top of the page
-   (`class="showcase"`), and its privacy policy in the footer's list. In `en/index.html` every link starts with `../`.
+   (`class="showcase"`). The card's privacy-policy button is the page's only link to the policy. In `en/index.html` every
+   link starts with `../`.
 4. Set its price on the card: `<span class="price">বিনামূল্যে</span>` / `<span class="price">Free</span>` for a free app, or
    `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at

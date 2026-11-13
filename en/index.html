@@ -30,7 +30,6 @@
 <header class="site-head">
   <div class="wrap bar">
     <a class="brand" href="./"><img src="../assets/teatime-crumbles.svg" alt="" width="36" height="36"><span>Teatime Crumbles</span></a>
-    <nav class="links" aria-label="Main menu"><a href="#apps">Apps</a><a href="#privacy">Privacy</a></nav>
     <a class="tool" href="../" hreflang="bn" lang="bn" aria-label="বাংলা"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.6 5.4 3.6 8.5s-1.2 5.9-3.6 8.5c-2.4-2.6-3.6-5.4-3.6-8.5s1.2-5.9 3.6-8.5z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="long">বাংলা</span><span class="short" aria-hidden="true">বাং</span></a>
     <details class="theme">
       <summary class="tool" aria-label="Choose a theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.3 0 1.9-.8 1.9-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.7 1.8-1.7h2.1a4.2 4.2 0 0 0 4.2-4.2C21 6.9 17 3.5 12 3.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7.6" cy="11.4" r="1.25" fill="currentColor"/><circle cx="10.3" cy="7.7" r="1.25" fill="currentColor"/><circle cx="14.7" cy="7.9" r="1.25" fill="currentColor"/></svg><span class="long">Theme</span></summary>
@@ -56,7 +55,7 @@
         <p class="lead">For learning, design and planning — simply, in Bangla.</p>
         <div class="cta">
           <a class="btn primary" href="#apps">See our apps</a>
-          <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">Contact</a>
+          <a class="btn contact-alt" href="mailto:mohammadmotiurrahman@gmail.com">Contact</a>
         </div>
       </div>
       <!-- One icon per released app, in the same order as the cards below. -->
@@ -72,7 +71,9 @@
 
   <section class="section" id="apps" aria-labelledby="apps-h">
     <div class="wrap">
-      <div class="section-head"><h2 id="apps-h">Our apps</h2></div>
+      <div class="section-head"><h2 id="apps-h">Our apps</h2>
+        <!-- Remove this line once the apps are on Google Play; each card then gets its own Google Play button. -->
+        <p class="section-note">All apps are coming soon to Google Play.</p></div>
       <!-- Price on each card: <span class="price">Free</span> for a free app, <span class="price paid">Paid</span> for a paid one. -->
       <div class="grid">
 
@@ -80,15 +81,15 @@
       <article class="card" id="nakshipitha">
         <div class="head">
           <img class="icon" src="../assets/nakshipitha-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">Art &amp; Design</p><h3>Nakshi Pitha Maker</h3><p class="name-alt" lang="bn">নকশি পিঠা</p></div>
+          <div><p class="cat">Art &amp; Design</p><h3>Nakshi Pitha Maker</h3></div>
         </div>
         <p class="text">Design carved nakshi pitha, print a true-size stencil, export a 3D-printable stamp and festival greeting cards. Works offline; no ads, no sign-in.</p>
         <div class="foot">
-          <div class="meta"><span class="price">Free</span><span class="status">Google Play — coming soon</span></div>
+          <span class="price">Free</span>
           <div class="actions">
-            <!-- After the app is live on Google Play: delete the status line above and add, before the privacy link,
-            <a class="btn primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.nakshipitha">Google Play</a> -->
-            <a class="btn" href="../app/nakshipitha/privacy.html">Privacy policy</a>
+            <!-- After the app is live on Google Play, add before the privacy link:
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.nakshipitha">Google Play</a> -->
+            <a class="btn small" href="../app/nakshipitha/privacy.html">Privacy policy</a>
           </div>
         </div>
       </article>
@@ -97,15 +98,15 @@
       <article class="card" id="banglabraille">
         <div class="head">
           <img class="icon" src="../assets/bangla-braille-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">Education</p><h3>Bangla Braille</h3><p class="name-alt" lang="bn">বাংলা ব্রেইল</p></div>
+          <div><p class="cat">Education</p><h3>Bangla Braille</h3></div>
         </div>
         <p class="text">Turn Bangla text or book photos into braille: embosser files and slate guides. Works offline; no ads, no sign-in.</p>
         <div class="foot">
-          <div class="meta"><span class="price">Free</span><span class="status">Google Play — coming soon</span></div>
+          <span class="price">Free</span>
           <div class="actions">
-            <!-- After the app is live on Google Play: delete the status line above and add, before the privacy link,
-            <a class="btn primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.banglabraille">Google Play</a> -->
-            <a class="btn" href="../app/bangla-braille/privacy.html">Privacy policy</a>
+            <!-- After the app is live on Google Play, add before the privacy link:
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.banglabraille">Google Play</a> -->
+            <a class="btn small" href="../app/bangla-braille/privacy.html">Privacy policy</a>
           </div>
         </div>
       </article>
@@ -114,15 +115,15 @@
       <article class="card" id="sporshochitro">
         <div class="head">
           <img class="icon" src="../assets/sporshochitro-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">Education</p><h3>Sporsho Chitro</h3><p class="name-alt" lang="bn">স্পর্শ চিত্র</p></div>
+          <div><p class="cat">Education</p><h3>Sporsho Chitro</h3></div>
         </div>
         <p class="text">Turn textbook diagrams into tactile graphics with Bangla braille labels. Works offline; no ads, no sign-in.</p>
         <div class="foot">
-          <div class="meta"><span class="price">Free</span><span class="status">Google Play — coming soon</span></div>
+          <span class="price">Free</span>
           <div class="actions">
-            <!-- After the app is live on Google Play: delete the status line above and add, before the privacy link,
-            <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.sporshochitro.app">Google Play</a> -->
-            <a class="btn" href="../app/sporshochitro/privacy/">Privacy policy</a>
+            <!-- After the app is live on Google Play, add before the privacy link:
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=com.sporshochitro.app">Google Play</a> -->
+            <a class="btn small" href="../app/sporshochitro/privacy/">Privacy policy</a>
           </div>
         </div>
       </article>
@@ -131,15 +132,15 @@
       <article class="card" id="baribanao">
         <div class="head">
           <img class="icon" src="../assets/baribanao-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">House &amp; Home</p><h3>Bari Banao: Home Planner</h3><p class="name-alt" lang="bn">বাড়ি বানাও</p></div>
+          <div><p class="cat">House &amp; Home</p><h3>Bari Banao: Home Planner</h3></div>
         </div>
         <p class="text">Plan a home before you build: pick a style, budget, plot and rooms, and get a floor plan, a cost estimate and a 3D model. Works offline; no ads, no sign-in.</p>
         <div class="foot">
-          <div class="meta"><span class="price">Free</span><span class="status">Google Play — coming soon</span></div>
+          <span class="price">Free</span>
           <div class="actions">
-            <!-- After the app is live on Google Play: delete the status line above and add, before the privacy link,
-            <a class="btn primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.baribanao">Google Play</a> -->
-            <a class="btn" href="../app/baribanao/privacy.html">Privacy policy</a>
+            <!-- After the app is live on Google Play, add before the privacy link:
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.baribanao">Google Play</a> -->
+            <a class="btn small" href="../app/baribanao/privacy.html">Privacy policy</a>
           </div>
         </div>
       </article>
@@ -148,15 +149,15 @@
       <article class="card" id="biyerkhata">
         <div class="head">
           <img class="icon" src="../assets/biyerkhata-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">Lifestyle</p><h3>Biyer Khata: Wedding Planner</h3><p class="name-alt" lang="bn">বিয়ের খাতা</p></div>
+          <div><p class="cat">Lifestyle</p><h3>Biyer Khata: Wedding Planner</h3></div>
         </div>
         <p class="text">Plan a Dhaka wedding: dress each event’s hall in 3D and see the cost of everything in taka. Your plan stays on your phone; no ads, no sign-in.</p>
         <div class="foot">
-          <div class="meta"><span class="price">Free</span><span class="status">Google Play — coming soon</span></div>
+          <span class="price">Free</span>
           <div class="actions">
-            <!-- After the app is live on Google Play: delete the status line above and add, before the privacy link,
-            <a class="btn primary" href="https://play.google.com/store/apps/details?id=bd.biyerkhata.app">Google Play</a> -->
-            <a class="btn" href="../app/biyerkhata/privacy.html">Privacy policy</a>
+            <!-- After the app is live on Google Play, add before the privacy link:
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=bd.biyerkhata.app">Google Play</a> -->
+            <a class="btn small" href="../app/biyerkhata/privacy.html">Privacy policy</a>
           </div>
         </div>
       </article>
@@ -168,7 +169,6 @@
           <svg class="icon" viewBox="0 0 72 72" width="64" height="64" aria-hidden="true"><rect width="72" height="72" rx="18" fill="#8a4a12"/><path d="M18 54 54 18" stroke="#f7f1e3" stroke-width="4" stroke-linecap="round"/><ellipse cx="50" cy="22" rx="3.2" ry="1.6" transform="rotate(-45 50 22)" fill="#8a4a12"/><path d="M50 22c10 8-6 14-14 22s-6 16 6 14" fill="none" stroke="#f42a41" stroke-width="2.4" stroke-dasharray="5 4" stroke-linecap="round"/></svg>
           <div><p class="cat">Coming soon</p><h3>Darzi Studio</h3></div>
         </div>
-        <p class="text">Details coming soon.</p>
       </article>
 
       </div>
@@ -200,28 +200,6 @@
 </main>
 
 <footer class="site-foot">
-  <div class="wrap foot-grid">
-    <div>
-      <a class="brand" href="./"><img src="../assets/teatime-crumbles.svg" alt="" width="38" height="38"><span>Teatime Crumbles</span></a>
-      <p class="tagline">Thoughtfully made apps for Bangla speakers.</p>
-    </div>
-    <nav id="privacy" aria-labelledby="privacy-h">
-      <h2 id="privacy-h">Privacy policies</h2>
-      <!-- Add each new app's privacy policy to this list too. -->
-      <ul>
-        <li><a href="../app/nakshipitha/privacy.html">Nakshi Pitha Maker</a></li>
-        <li><a href="../app/bangla-braille/privacy.html">Bangla Braille</a></li>
-        <li><a href="../app/sporshochitro/privacy/">Sporsho Chitro</a></li>
-        <li><a href="../app/baribanao/privacy.html">Bari Banao</a></li>
-        <li><a href="../app/biyerkhata/privacy.html">Biyer Khata</a></li>
-      </ul>
-    </nav>
-    <div>
-      <h2>Contact</h2>
-      <p>Questions or feedback? Email us.</p>
-      <a class="btn" href="mailto:mohammadmotiurrahman@gmail.com">Email us</a>
-    </div>
-  </div>
   <div class="wrap legal"><p>© 2026 Teatime Crumbles</p></div>
 </footer>
 </body>
