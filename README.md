@@ -27,6 +27,8 @@ app/
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png  fonts and icons used by the hub page (index.html)
+  teatime-crumbles.svg     the site's own mark (header, footer, browser tab); teatime-crumbles-180.png and -512.png are
+                           PNG copies of it for phones' home screens and for link previews
 ```
 
 ## Adding another app (for example Darzi Studio)
@@ -35,8 +37,11 @@ assets/
    (`io.github.teatimecrumbles.<appname>`).
 2. Write a **separate** `app/<appname>/privacy.html` that describes what *that* app really does with data. Do not copy the Nakshi Pitha policy
    unless the other app also collects nothing, has no ads, no analytics and no sign-in.
-3. Add a card for it in `index.html` (copy the `<article class="card">` block).
-4. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
+3. Add a card for it in `index.html` (copy the `<article class="card">` block). Set `--accent` on the card to a colour from the app's
+   icon: it colours the stitched line at the top of the card.
+4. The header of `index.html` promises that every app is free, has no ads and needs no sign-in. If the new app breaks one of these,
+   remove that promise there.
+5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
 
 ## Nakshi Pitha and its privacy policy
