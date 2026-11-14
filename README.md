@@ -39,7 +39,7 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/pdffit/privacy.html   <- Play Console "Privacy policy" URL
   makeyourownsaree/        Make Your Own Saree (a paid app): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/makeyourownsaree/privacy.html   <- Play Console "Privacy policy" URL
-  inkling/                 Inkling (a paid children's app; এসো লিখি is its Bangla edition): only the privacy policy is public (the app itself is Android-only and private)
+  inkling/                 Inkling (a free children's app with the in-app purchase Inkling Full; এসো লিখি is its Bangla edition): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/inkling/privacy.html   <- Play Console "Privacy policy" URL
   gardenbook/              Garden Book: only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/gardenbook/privacy.html   <- Play Console "Privacy policy" URL
@@ -207,7 +207,8 @@ orders are handled changes.
 
 ## Inkling and its privacy policy
 
-Inkling is a **paid** Android app for children (package `io.github.teatimecrumbles.inkling`). Its code, including the web app inside it,
+Inkling is a free Android app for children (package `io.github.teatimecrumbles.inkling`) with one in-app purchase, Inkling Full
+(US$4.99 through Google Play), which opens every course unit beyond the first. Its code, including the web app inside it,
 lives in the private repository `teatimecrumbles/myapps` (folder `inkling`). Only the privacy policy is published here, because
 Google Play needs a public address for it.
 
