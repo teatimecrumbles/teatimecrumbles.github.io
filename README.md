@@ -35,6 +35,7 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/islamicpatternstudio/privacy.html   <- Play Console "Privacy policy" URL
   worlddressglobe/         World Dress Globe: only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/worlddressglobe/privacy.html   <- Play Console "Privacy policy" URL
+    index.html             opens privacy.html, so the folder's own address shows the policy too
   pdffit/                  PDF Fit: only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/pdffit/privacy.html   <- Play Console "Privacy policy" URL
   makeyourownsaree/        Make Your Own Saree (a paid app): only the privacy policy is public (the app itself is Android-only and private)
