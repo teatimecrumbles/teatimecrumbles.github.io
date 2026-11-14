@@ -37,10 +37,12 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/pdffit/privacy.html   <- Play Console "Privacy policy" URL
   makeyourownsaree/        Make Your Own Saree (a paid app): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/makeyourownsaree/privacy.html   <- Play Console "Privacy policy" URL
+  inkling/                 Inkling (a paid children's app; এসো লিখি is its Bangla edition): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/inkling/privacy.html   <- Play Console "Privacy policy" URL
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png,
-  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png
+  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png
                            fonts and icons used by the hub pages (index.html, en/index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
@@ -74,7 +76,7 @@ and titles, Hind Siliguri for the text.
    `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one, or
    `<span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>` / `<span class="price paid">Free · Pro in-app</span>` for a free
    app with an in-app purchase (like Darzi Studio).
-   The row of icons holds two rows of three and the last two icons centred below them; for a ninth app, see the comment next
+   The row of icons holds rows of three (twelve icons now fill four rows); for the next app, see the comment next
    to `.showcase` in `assets/site.css`.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
@@ -194,3 +196,13 @@ changes, edit it here and copy the same file to `makeyourownsaree/app/src/main/a
 Bangla Braille page, it is self-contained (no scripts, fonts or other files), in English and Bangla. Because the app is sold, the
 policy also says what Google shares with the developer about each sale and what that is used for; keep that part true if the way
 orders are handled changes.
+
+## Inkling and its privacy policy
+
+Inkling is a **paid** Android app for children (package `io.github.teatimecrumbles.inkling`). Its code, including the web app inside it,
+lives in the private repository `teatimecrumbles/myapps` (folder `inkling`). Only the privacy policy is published here, because
+Google Play needs a public address for it.
+
+The app contains a copy of `app/inkling/privacy.html`, and the app's build **fails if the two differ**. So when the policy changes, edit it
+here and copy the same file to `inkling/app/src/main/assets/web/privacy.html` in `myapps`. The page is self-contained and, because the
+app is for children, has no clickable links that leave the page (the e-mail address is plain text).
