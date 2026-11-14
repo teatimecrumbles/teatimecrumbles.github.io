@@ -167,14 +167,16 @@ that version.
 
 ## World Dress Globe and its privacy policy
 
-World Dress Globe is an Android app (package `io.github.teatimecrumbles.worlddressglobe`): a coloring atlas of traditional
-dress for 195 countries, sold as a paid app on Google Play (one price, everything included, no in-app purchases). The app
-itself is in English. Its code lives in the private repository `teatimecrumbles/myapps` (folder `worlddressglobe`). Only the
-privacy policy is published here, at `app/worlddressglobe/privacy.html`, because Google Play needs a public address for it. The
-app links to this page from its About screen (the address is `PRIVACY_URL` in `worlddressglobe/build-www.js` in `myapps`); it
-does not carry a copy. Every build of the app checks that this page is online and names the app and the contact address, and a
-release build fails if it does not. Like the Bangla Braille page, it is self-contained (no scripts, fonts or other files), in
-English and Bangla. If the app ever starts handling data differently, update this page before releasing that version.
+World Dress Globe is an Android app (package `io.github.teatimecrumbles.worlddressglobe`): a coloring atlas of
+traditional dress for 195 countries. Some parts are free for everyone, and the extended experience, the full atlas, is
+one in-app purchase through Google Play (US$3.99); its card's price reads `বিনামূল্যে · পুরো অ্যাটলাস অ্যাপের ভেতরে` /
+`Free · Full atlas in-app`. The app itself is in English. Its code lives in the private repository
+`teatimecrumbles/myapps` (folder `worlddressglobe`). Only the privacy policy is published here, at
+`app/worlddressglobe/privacy.html`, because Google Play needs a public address for it. The app links to this page from
+its About screen (the address is `PRIVACY_URL` in `worlddressglobe/build-www.js` in `myapps`); it does not carry a copy.
+Every build of the app checks that this page is online and names the app and the contact address, and a release build
+fails if it does not. Like the Bangla Braille page, it is self-contained (no scripts, fonts or other files), in English
+and Bangla. If the app ever starts handling data differently, update this page before releasing that version.
 
 ## Kajer Bhasha and its privacy policy
 
