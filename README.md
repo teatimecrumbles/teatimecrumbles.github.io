@@ -49,10 +49,12 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/humsafar/privacy.html   <- Play Console "Privacy policy" URL
   mehedistudio/            Mehedi Studio (মেহেদি স্টুডিও; free, with the in-app purchase Mehedi Studio Pro): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/mehedistudio/privacy.html   <- Play Console "Privacy policy" URL
+  ghorsajao/               Ghor Sajao (ঘর সাজাও; free): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/ghorsajao/privacy.html   <- Play Console "Privacy policy" URL
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png,
-  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png, jamdaniloom-icon-192.png, humsafar-icon-192.png, mehedistudio-icon-192.png
+  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png, jamdaniloom-icon-192.png, humsafar-icon-192.png, mehedistudio-icon-192.png, ghorsajao-icon-192.png
                            fonts and icons used by the hub pages (index.html, en/index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
@@ -263,3 +265,13 @@ The app contains a copy of `app/nakshikantha/privacy.html`, and the app's build 
 edit it here and copy the same file to `nakshikantha/app/src/main/assets/privacy.html` in `myapps`. Like the Bangla Braille page, it is
 self-contained (no scripts, fonts or other files), in Bangla and English. If the app ever starts handling data differently, update this
 page before releasing that version.
+
+## Ghor Sajao and its privacy policy
+
+Ghor Sajao is an Android app (package `io.github.teatimecrumbles.ghorsajao`, free). Its code, including the web app inside it, lives in the
+private repository `teatimecrumbles/myapps` (folder `ghorsajao`). Only the privacy policy is published here, because Google Play needs a
+public address for it.
+
+The app contains a copy of `app/ghorsajao/privacy.html`, and the app's build **fails if the two differ**. So when the policy changes, edit it here
+and copy the same file to `ghorsajao/app/src/main/assets/web/privacy.html` in `myapps`. Like the Bangla Braille page, it is self-contained, so the
+same file works on the website and inside the app.
