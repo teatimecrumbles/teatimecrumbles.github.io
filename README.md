@@ -28,7 +28,7 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/nakshikantha/privacy.html   <- Play Console "Privacy policy" URL
   darzistudio/             Darzi Studio (দর্জি স্টুডিও): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/darzistudio/privacy.html   <- Play Console "Privacy policy" URL
-    index.html             an earlier placeholder page ("Hello"); nothing links to it
+    index.html             opens privacy.html, so the folder's own address shows the policy too
   kajerbhasha/             Kajer Bhasha (কাজের ভাষা): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/kajerbhasha/privacy.html   <- Play Console "Privacy policy" URL
   islamicpatternstudio/    Islamic Pattern Studio (Pattern Studio on the phone): only the privacy policy is public (the app itself is Android-only and private)
