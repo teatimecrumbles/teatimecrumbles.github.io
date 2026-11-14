@@ -33,10 +33,12 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/islamicpatternstudio/privacy.html   <- Play Console "Privacy policy" URL
   worlddressglobe/         World Dress Globe: only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/worlddressglobe/privacy.html   <- Play Console "Privacy policy" URL
+  pdffit/                  PDF Fit: only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/pdffit/privacy.html   <- Play Console "Privacy policy" URL
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png,
-  kajerbhasha-icon-192.png
+  kajerbhasha-icon-192.png, pdffit-icon-192.png
                            fonts and icons used by the hub pages (index.html, en/index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
@@ -165,3 +167,15 @@ repository `teatimecrumbles/myapps` (folder `kajerbhasha`). Only the privacy pol
 address is `privacyUrl` in `kajerbhasha/site.config.js` in `myapps`); it does not carry a copy, and the app's build checks that the
 page is online. It is self-contained, in English, Bangla, Nepali and Urdu. If the app ever starts handling data differently,
 update this page before releasing that version.
+
+## PDF Fit and its privacy policy
+
+PDF Fit is a paid Android app (package `io.github.teatimecrumbles.pdffit`, one price on Google Play, nothing sold inside the
+app): it joins certificates, passport pages and scans into one PDF under the size limit a portal sets. The app is in English.
+Its code lives in the private repository `teatimecrumbles/myapps` (folder `pdffit`). Only the privacy policy is published here,
+at `app/pdffit/privacy.html`, because Google Play needs a public address for it.
+
+The app contains a copy of `app/pdffit/privacy.html`, and the app's build **fails if the two differ**. So when the policy
+changes, edit it here and copy the same file to `pdffit/app/src/main/assets/privacy.html` in `myapps`. Like the Bangla Braille
+page, it is self-contained (no fonts, scripts or links to other files), so the same file works on the website and inside the app.
+
