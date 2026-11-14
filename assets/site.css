@@ -110,8 +110,9 @@ p,li,h1,h2,h3{overflow-wrap:anywhere}
 .showcase{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;width:calc(100% - 18px);max-width:440px;padding:30px;border-radius:20px;background:var(--surface);border:1px solid var(--line);
   box-shadow:9px 9px 0 -1px var(--bg-2),9px 9px 0 0 var(--line),18px 18px 0 -1px var(--bg-2),18px 18px 0 0 var(--line-soft),0 30px 60px -30px rgba(40,24,10,.45)}
 .showcase img{grid-column:span 2;width:100%;max-width:96px;height:auto;margin:0 auto;border-radius:22%;box-shadow:0 10px 24px -14px var(--icon-shadow)}
-/* Twenty-one icons: seven full rows of three. With a twenty-second, centre it on the eighth row:
-   .showcase img:nth-child(22){grid-column:3 / span 2}; with a twenty-third, use 2 / span 2 for that rule instead. */
+/* Twenty-two icons: seven full rows of three and one in the middle of an eighth row. With a twenty-third, the last row
+   has two: change the rule below to 2 / span 2; a twenty-fourth fills the row (remove it). */
+.showcase img:nth-child(22){grid-column:3 / span 2}
 @media (max-width:600px){.hero{padding:44px 0 56px}.showcase{max-width:320px;padding:20px;gap:14px}}
 
 /* ---------- Sections ---------- */
