@@ -27,13 +27,16 @@ app/
   darzistudio/             Darzi Studio (দর্জি স্টুডিও): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/darzistudio/privacy.html   <- Play Console "Privacy policy" URL
     index.html             an earlier placeholder page ("Hello"); nothing links to it
+  kajerbhasha/             Kajer Bhasha (কাজের ভাষা): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/kajerbhasha/privacy.html   <- Play Console "Privacy policy" URL
   islamicpatternstudio/    Islamic Pattern Studio (Pattern Studio on the phone): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/islamicpatternstudio/privacy.html   <- Play Console "Privacy policy" URL
   worlddressglobe/         World Dress Globe: only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/worlddressglobe/privacy.html   <- Play Console "Privacy policy" URL
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
-  biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png
+  biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png,
+  kajerbhasha-icon-192.png
                            fonts and icons used by the hub pages (index.html, en/index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
@@ -152,3 +155,13 @@ app links to this page from its About screen (the address is `PRIVACY_URL` in `w
 does not carry a copy. Every build of the app checks that this page is online and names the app and the contact address, and a
 release build fails if it does not. Like the Bangla Braille page, it is self-contained (no scripts, fonts or other files), in
 English and Bangla. If the app ever starts handling data differently, update this page before releasing that version.
+
+## Kajer Bhasha and its privacy policy
+
+Kajer Bhasha (কাজের ভাষা) is a free Android app (package `io.github.teatimecrumbles.kajerbhasha`): job phrases in English, Gulf
+Arabic and Malay for workers from Bangladesh, Nepal and Pakistan going to the Gulf or Malaysia. Its code lives in the private
+repository `teatimecrumbles/myapps` (folder `kajerbhasha`). Only the privacy policy is published here, at
+`app/kajerbhasha/privacy.html`, because Google Play needs a public address for it. The app links to it from More and About (the
+address is `privacyUrl` in `kajerbhasha/site.config.js` in `myapps`); it does not carry a copy, and the app's build checks that the
+page is online. It is self-contained, in English, Bangla, Nepali and Urdu. If the app ever starts handling data differently,
+update this page before releasing that version.
