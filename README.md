@@ -24,6 +24,8 @@ app/
   biyerkhata/              Biyer Khata (বিয়ের খাতা): the privacy policy and the price file the app downloads (the app itself is private)
     privacy.html           https://teatimecrumbles.github.io/app/biyerkhata/privacy.html   <- Play Console "Privacy policy" URL
     prices.json            https://teatimecrumbles.github.io/app/biyerkhata/prices.json    <- read by the app; edit to update prices
+  nakshikantha/            Nakshi Kantha Maker (নকশি কাঁথা): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/nakshikantha/privacy.html   <- Play Console "Privacy policy" URL
   darzistudio/             Darzi Studio (দর্জি স্টুডিও): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/darzistudio/privacy.html   <- Play Console "Privacy policy" URL
     index.html             an earlier placeholder page ("Hello"); nothing links to it
@@ -246,3 +248,15 @@ policy is published here, at `app/humsafar/privacy.html`, because Google Play ne
 from its More tab (the address is `HS_PRIVACY_URL` in `humsafar/www/config.js` in `myapps`) and does not carry a copy; every
 release build checks that the page is online and names Humsafar. Like the Darzi Studio page it is self-contained, in four
 languages. If the app ever starts handling data differently (a server, sync, analytics), update this page before releasing that version.
+
+## Nakshi Kantha Maker and its privacy policy
+
+Nakshi Kantha Maker (নকশি কাঁথা) is an Android app (package `io.github.teatimecrumbles.nakshikantha`): free to download, with one
+optional in-app purchase, Kantha Pro, sold through Google Play. Its code, including the web app inside it, lives in the private
+repository `teatimecrumbles/myapps` (folder `nakshikantha`). Only the privacy policy is published here, because Google Play needs a
+public address for it.
+
+The app contains a copy of `app/nakshikantha/privacy.html`, and the app's build **fails if the two differ**. So when the policy changes,
+edit it here and copy the same file to `nakshikantha/app/src/main/assets/privacy.html` in `myapps`. Like the Bangla Braille page, it is
+self-contained (no scripts, fonts or other files), in Bangla and English. If the app ever starts handling data differently, update this
+page before releasing that version.
