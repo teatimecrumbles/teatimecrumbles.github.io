@@ -162,7 +162,7 @@ that version.
 ## World Dress Globe and its privacy policy
 
 World Dress Globe is an Android app (package `io.github.teatimecrumbles.worlddressglobe`): a coloring atlas of traditional
-dress for 195 countries, free to download, with one optional in-app purchase, the full atlas, sold through Google Play. The app
+dress for 195 countries, sold as a paid app on Google Play (one price, everything included, no in-app purchases). The app
 itself is in English. Its code lives in the private repository `teatimecrumbles/myapps` (folder `worlddressglobe`). Only the
 privacy policy is published here, at `app/worlddressglobe/privacy.html`, because Google Play needs a public address for it. The
 app links to this page from its About screen (the address is `PRIVACY_URL` in `worlddressglobe/build-www.js` in `myapps`); it
