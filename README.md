@@ -53,10 +53,14 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/ghorsajao/privacy.html   <- Play Console "Privacy policy" URL
   photofit/                PhotoFit (passport, visa and ID photos; free, with the in-app purchase PhotoFit Pro): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/photofit/privacy.html   <- Play Console "Privacy policy" URL
+  ekmuthomoyda/             Ek Mutho Moyda (এক মুঠো ময়দা; a free baking book with no ads or purchases): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/ekmuthomoyda/privacy.html   <- Play Console "Privacy policy" URL
+    index.html             opens privacy.html, so the folder's own address shows the policy too
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png,
-  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png, jamdaniloom-icon-192.png, humsafar-icon-192.png, mehedistudio-icon-192.png, ghorsajao-icon-192.png, photofit-icon-192.png
+  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png, jamdaniloom-icon-192.png, humsafar-icon-192.png, mehedistudio-icon-192.png, ghorsajao-icon-192.png, photofit-icon-192.png,
+  ekmuthomoyda-icon-192.png
                            fonts and icons used by the hub pages (index.html, en/index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
@@ -294,3 +298,14 @@ differ**. So when the policy changes, edit it here and copy the same file to
 `photofit/app/src/main/assets/web/privacy.html` in `myapps`. It is self-contained (no scripts, fonts or other files), in
 English in full with summaries in Bangla, Hindi, Urdu, Arabic, Spanish and French. If the app ever handles data
 differently, update this page before releasing that version.
+
+## Ek Mutho Moyda and its privacy policy
+
+Ek Mutho Moyda (এক মুঠো ময়দা) is a free Android baking book (package `io.github.teatimecrumbles.ekmuthomoyda`) with no ads and no
+in-app purchases: 72 bakes with animated videos, 22 ways to bake and a bakery tour of the world. It works offline and declares no
+permissions. Its code lives in the repository `teatimecrumbles/myapps` (folder `ekmuthomoyda`). Only the privacy policy is published
+here, at `app/ekmuthomoyda/privacy.html`, because Google Play needs a public address for it; `app/ekmuthomoyda/index.html` forwards to it.
+
+The app contains a copy of `app/ekmuthomoyda/privacy.html`, and the app's build **fails if the two differ**. So when the policy
+changes, edit it here and copy the same file to `ekmuthomoyda/app/src/main/assets/web/privacy.html` in `myapps`. The page is
+self-contained (no scripts, fonts or other files), in English and Bangla.
