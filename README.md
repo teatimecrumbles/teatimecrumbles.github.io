@@ -93,16 +93,16 @@ and titles, Hind Siliguri for the text.
    (`io.github.teatimecrumbles.<appname>`).
 2. Write a **separate** `app/<appname>/privacy.html` that describes what *that* app really does with data. Do not copy the Nakshi Pitha policy
    unless the other app also collects nothing, has no ads, no analytics and no sign-in.
-3. Add it to **both** hub pages, `index.html` (Bangla) and `en/index.html` (English), in two places each: a card (copy an
-   `<article class="card">` block and change its category, texts and links), its icon in the row of icons at the top of the page
-   (`class="showcase"`). The card's privacy-policy button is the page's only link to the policy. In `en/index.html` every
-   link starts with `../`.
+3. Add its card to **both** hub pages, `index.html` (Bangla) and `en/index.html` (English), in the same genre and the same
+   place on both: copy an `<article class="card">` block into that genre's `<section class="genre">` and change its texts and
+   links. The genres are Dress & Textiles, Patterns & Art, Home & Life, Food & Drink, Learning and Tools; a new genre needs a
+   `<section class="genre">` and a link in the genre bar (`<nav class="genre-nav">`) on both pages. The card's
+   privacy-policy button is the page's only link to the policy. In `en/index.html` every link starts with `../`. The panel of
+   nine icons at the top of the page (`class="showcase"`) shows a few apps from every genre; a new app does not go there.
 4. Set its price on the card: `<span class="price">বিনামূল্যে</span>` / `<span class="price">Free</span>` for a free app,
    `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one, or
    `<span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>` / `<span class="price paid">Free · Pro in-app</span>` for a free
    app with an in-app purchase (like Darzi Studio).
-   The row of icons holds rows of three (fifteen icons now: five full rows); for the next app, see
-   the comment next to `.showcase` in `assets/site.css`.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
 

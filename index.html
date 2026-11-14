@@ -60,28 +60,15 @@
       </div>
       <!-- One icon per released app, in the same order as the cards below. -->
       <div class="showcase" aria-hidden="true">
-        <img src="assets/nakshipitha-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/bangla-braille-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/sporshochitro-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/baribanao-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/biyerkhata-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/darzistudio-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/islamicpatternstudio-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/worlddressglobe-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/kajerbhasha-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/pdffit-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/makeyourownsaree-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/inkling-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/gardenbook-icon-192.png" alt="" width="96" height="96">
         <img src="assets/jamdaniloom-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/humsafar-icon-192.png" alt="" width="96" height="96">
         <img src="assets/nakshikantha-icon-192.png" alt="" width="96" height="96">
         <img src="assets/mehedistudio-icon-192.png" alt="" width="96" height="96">
+        <img src="assets/islamicpatternstudio-icon-192.png" alt="" width="96" height="96">
         <img src="assets/ghorsajao-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/photofit-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/ekmuthomoyda-icon-192.png" alt="" width="96" height="96">
         <img src="assets/ekcupcha-icon-192.png" alt="" width="96" height="96">
-        <img src="assets/ekhaari-icon-192.png" alt="" width="96" height="96">
+        <img src="assets/bangla-braille-icon-192.png" alt="" width="96" height="96">
+        <img src="assets/inkling-icon-192.png" alt="" width="96" height="96">
+        <img src="assets/photofit-icon-192.png" alt="" width="96" height="96">
       </div>
     </div>
   </section>
@@ -91,396 +78,431 @@
       <div class="section-head"><h2 id="apps-h">আমাদের অ্যাপ</h2>
         <!-- Remove this line once the apps are on Google Play; each card then gets its own Google Play button. -->
         <p class="section-note">সব অ্যাপ শিগগির Google Play-তে আসছে।</p></div>
+    </div>
+    <!-- One link per genre below. A new genre needs a link here and a <section class="genre"> further down. -->
+    <nav class="genre-nav" aria-label="অ্যাপের ধরন">
+      <div class="wrap"><ul>
+        <li><a href="#genre-dress">পোশাক ও বুনন</a></li>
+        <li><a href="#genre-patterns">নকশা ও শিল্প</a></li>
+        <li><a href="#genre-home">ঘর ও জীবন</a></li>
+        <li><a href="#genre-food">খাবার ও পানীয়</a></li>
+        <li><a href="#genre-learning">শিক্ষা</a></li>
+        <li><a href="#genre-tools">কাজের সরঞ্জাম</a></li>
+      </ul></div>
+    </nav>
+    <div class="wrap">
       <!-- Price on each card: <span class="price">বিনামূল্যে</span> for a free app, <span class="price paid">পেইড</span> for a paid one,
            <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span> for a free app with an in-app purchase. -->
-      <div class="grid">
+      <!-- Each app's card goes in exactly one genre. Keep the two language pages in the same order. -->
+      <section class="genre" id="genre-dress" aria-labelledby="genre-dress-h">
+        <h3 class="genre-title" id="genre-dress-h">পোশাক ও বুনন</h3>
+        <div class="grid">
+        <!-- ===== App: Jamdani Loom ===== -->
+              <!-- Free to download; Jamdani Pro is a one-time in-app purchase through Google Play. -->
+        <article class="card" id="jamdaniloom">
+                <div class="head">
+                  <img class="icon" src="assets/jamdaniloom-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>জামদানি তাঁত</h4></div>
+                </div>
+                <p class="text">ছকে জামদানির নকশা আঁকুন, তাঁতে সারির পর সারি বোনা দেখুন, তারপর দেখুন পুরো কাপড়। একবার কিনলেই জামদানি প্রো-তে পাবেন সব নকশা, সব পাড় আর আরও সূক্ষ্ম ছক। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.jamdaniloom">Google Play</a> -->
+                    <a class="btn small" href="app/jamdaniloom/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Nakshi Pitha ===== -->
-      <article class="card" id="nakshipitha">
-        <div class="head">
-          <img class="icon" src="assets/nakshipitha-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3>নকশি পিঠা</h3></div>
-        </div>
-        <p class="text">নকশি পিঠার নকশা আঁকুন, আসল মাপের স্টেনসিল প্রিন্ট করুন, থ্রিডি ছাঁচ আর উৎসবের শুভেচ্ছা কার্ড বানান — ইন্টারনেট ছাড়াই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.nakshipitha">Google Play</a> -->
-            <a class="btn small" href="app/nakshipitha/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Nakshi Kantha ===== -->
+              <!-- Free to download; Kantha Pro is a one-time in-app purchase through Google Play. -->
+        <article class="card" id="nakshikantha">
+                <div class="head">
+                  <img class="icon" src="assets/nakshikantha-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>নকশি কাঁথা</h4></div>
+                </div>
+                <p class="text">নকশি কাঁথার নকশা করুন: পদ্ম, মাছ, পাখি আর কলকা বসান, পাড় দিন, মোটিফ ঘিরে পেছনের ঢেউ-ফোঁড় দেখুন। একবার কিনলেই কাঁথা প্রো-তে পাবেন সব মোটিফ আর আসল মাপের সেলাইয়ের প্যাটার্ন। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.nakshikantha">Google Play</a> -->
+                    <a class="btn small" href="app/nakshikantha/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Bangla Braille ===== -->
-      <article class="card" id="banglabraille">
-        <div class="head">
-          <img class="icon" src="assets/bangla-braille-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিক্ষা</p><h3>বাংলা ব্রেইল</h3></div>
-        </div>
-        <p class="text">বাংলা লেখা বা বইয়ের ছবি থেকে ব্রেইল: এমবসারের ফাইল ও স্লেট গাইড। ছবি ফোনের ভেতরেই পড়া হয়।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.banglabraille">Google Play</a> -->
-            <a class="btn small" href="app/bangla-braille/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Make Your Own Saree ===== -->
+        <article class="card" id="makeyourownsaree">
+                <div class="head">
+                  <img class="icon" src="assets/makeyourownsaree-icon-192.png" alt="" width="64" height="64">
+                  <div><h4 lang="en">Make Your Own Saree</h4></div>
+                </div>
+                <p class="text">দক্ষিণ এশিয়ার ২১৩টি তাঁতের শাড়ি থেকে একটি বেছে নিন: রং করুন, অথবা বুনন, সূচিকর্ম, ব্লক প্রিন্ট, ইক্কত বা টাই-ডাই করে নতুন করে বানান, প্রতিটি কারুশিল্পের নিজস্ব ধারায়: জামদানি, নকশিকাঁথা, পাটোলা, বাঁধনি আর আরও অনেক। অ্যাপটি ইংরেজিতে; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">পেইড</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.makeyourownsaree">Google Play</a> -->
+                    <a class="btn small" href="app/makeyourownsaree/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Sporsho Chitro ===== -->
-      <article class="card" id="sporshochitro">
-        <div class="head">
-          <img class="icon" src="assets/sporshochitro-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিক্ষা</p><h3>স্পর্শ চিত্র</h3></div>
-        </div>
-        <p class="text">পাঠ্যবইয়ের চিত্রের ছবি তুলুন, বাংলা ব্রেইল লেবেলসহ স্পর্শযোগ্য চিত্র বানান — ইন্টারনেট ছাড়াই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=com.sporshochitro.app">Google Play</a> -->
-            <a class="btn small" href="app/sporshochitro/privacy/">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Darzi Studio ===== -->
+              <!-- Free to download; Darzi Pro is a one-time in-app purchase through Google Play. -->
+        <article class="card" id="darzistudio">
+                <div class="head">
+                  <img class="icon" src="assets/darzistudio-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>দর্জি স্টুডিও</h4></div>
+                </div>
+                <p class="text">সালোয়ার কামিজ, শাড়ি বা লেহেঙ্গার নকশা অংশ ধরে ধরে বানান, দর্জিকে ছবি পাঠান। একবার কিনলেই দর্জি প্রো-তে পাবেন দর্জির শিট আর কাপড়ের হিসাব। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.darzistudio">Google Play</a> -->
+                    <a class="btn small" href="app/darzistudio/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Bari Banao ===== -->
-      <article class="card" id="baribanao">
-        <div class="head">
-          <img class="icon" src="assets/baribanao-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">ঘরবাড়ি</p><h3>বাড়ি বানাও</h3></div>
+        <!-- ===== App: World Dress Globe ===== -->
+              <!-- Some parts free; the full atlas is one in-app purchase through Google Play (US$3.99). The app itself is in English. -->
+        <article class="card" id="worlddressglobe">
+                <div class="head">
+                  <img class="icon" src="assets/worlddressglobe-icon-192.png" alt="" width="64" height="64">
+                  <div><h4 lang="en">World Dress Globe</h4></div>
+                </div>
+                <p class="text">১৯৫টি দেশের ঐতিহ্যবাহী পোশাকে রং করুন: গ্লোব ঘুরিয়ে দেশ বাছুন, প্রতিটি পোশাকের উৎসসহ গল্প পড়ুন, পাসপোর্টে সিল জমান। বারোটি দেশের প্রধান পোশাক আর প্রতিদিন একটি নতুন দেশের পোশাক বিনামূল্যে; বাকি পুরো অ্যাটলাস একবার কিনলেই আপনার। অ্যাপটি ইংরেজিতে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · পুরো অ্যাটলাস অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.worlddressglobe">Google Play</a> -->
+                    <a class="btn small" href="app/worlddressglobe/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
         </div>
-        <p class="text">বাড়ি বানানোর আগে পুরো বাড়িটা ভেবে দেখুন: ধরন, বাজেট, জমি আর ঘর বাছুন; পাবেন নকশা, খরচের আনুমানিক হিসাব আর ৩ডি মডেল — ইন্টারনেট ছাড়াই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.baribanao">Google Play</a> -->
-            <a class="btn small" href="app/baribanao/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+      </section>
+      <section class="genre" id="genre-patterns" aria-labelledby="genre-patterns-h">
+        <h3 class="genre-title" id="genre-patterns-h">নকশা ও শিল্প</h3>
+        <div class="grid">
+        <!-- ===== App: Islamic Pattern Studio ===== -->
+              <!-- Free to download; Pattern Studio Pro is a one-time in-app purchase through Google Play. -->
+        <article class="card" id="islamicpatternstudio">
+                <div class="head">
+                  <img class="icon" src="assets/islamicpatternstudio-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>ইসলামিক প্যাটার্ন স্টুডিও</h4></div>
+                </div>
+                <p class="text">ইসলামি জ্যামিতিক তারার নকশায় রং করুন, টাইলিং থেকে নিজের নকশা বানান, ঈদের কার্ড ও প্রিন্ট তৈরি করুন। একবার কিনলেই প্রো-তে পাবেন সব প্যাটার্ন, ডিজাইনার আর প্রিন্টের ফাইল। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.islamicpatternstudio">Google Play</a> -->
+                    <a class="btn small" href="app/islamicpatternstudio/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Biyer Khata ===== -->
-      <article class="card" id="biyerkhata">
-        <div class="head">
-          <img class="icon" src="assets/biyerkhata-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">জীবনধারা</p><h3>বিয়ের খাতা</h3></div>
-        </div>
-        <p class="text">ঢাকার বিয়ের পরিকল্পনা: প্রতিটি অনুষ্ঠানের আসর থ্রিডিতে সাজান, টাকায় সব খরচ দেখুন। আপনার পরিকল্পনা থাকে আপনার ফোনেই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=bd.biyerkhata.app">Google Play</a> -->
-            <a class="btn small" href="app/biyerkhata/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Mehedi Studio ===== -->
+              <!-- Free to download; Mehedi Studio Pro (US$1.99) is a one-time in-app purchase through Google Play. -->
+        <article class="card" id="mehedistudio">
+                <div class="head">
+                  <img class="icon" src="assets/mehedistudio-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>মেহেদি স্টুডিও · Mehedi Studio</h4></div>
+                </div>
+                <p class="text">জীবন্ত হাত আর পায়ে আয়নার মতো প্রতিসাম্যে হালাল মেহেদির নকশা আঁকুন, দিনে দিনে রঙ কেমন হবে দেখুন, আসল মাপের স্টেনসিল প্রিন্ট করুন বা শিল্পীকে পাঠান। বাংলা, ইংরেজি, হিন্দি, উর্দু ও আরবিতে; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.mehedi">Google Play</a> -->
+                    <a class="btn small" href="app/mehedistudio/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Darzi Studio ===== -->
-      <!-- Free to download; Darzi Pro is a one-time in-app purchase through Google Play. -->
-      <article class="card" id="darzistudio">
-        <div class="head">
-          <img class="icon" src="assets/darzistudio-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3>দর্জি স্টুডিও</h3></div>
+        <!-- ===== App: Nakshi Pitha ===== -->
+        <article class="card" id="nakshipitha">
+                <div class="head">
+                  <img class="icon" src="assets/nakshipitha-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>নকশি পিঠা</h4></div>
+                </div>
+                <p class="text">নকশি পিঠার নকশা আঁকুন, আসল মাপের স্টেনসিল প্রিন্ট করুন, থ্রিডি ছাঁচ আর উৎসবের শুভেচ্ছা কার্ড বানান — ইন্টারনেট ছাড়াই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.nakshipitha">Google Play</a> -->
+                    <a class="btn small" href="app/nakshipitha/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
         </div>
-        <p class="text">সালোয়ার কামিজ, শাড়ি বা লেহেঙ্গার নকশা অংশ ধরে ধরে বানান, দর্জিকে ছবি পাঠান। একবার কিনলেই দর্জি প্রো-তে পাবেন দর্জির শিট আর কাপড়ের হিসাব। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.darzistudio">Google Play</a> -->
-            <a class="btn small" href="app/darzistudio/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+      </section>
+      <section class="genre" id="genre-home" aria-labelledby="genre-home-h">
+        <h3 class="genre-title" id="genre-home-h">ঘর ও জীবন</h3>
+        <div class="grid">
+        <!-- ===== App: Bari Banao ===== -->
+        <article class="card" id="baribanao">
+                <div class="head">
+                  <img class="icon" src="assets/baribanao-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>বাড়ি বানাও</h4></div>
+                </div>
+                <p class="text">বাড়ি বানানোর আগে পুরো বাড়িটা ভেবে দেখুন: ধরন, বাজেট, জমি আর ঘর বাছুন; পাবেন নকশা, খরচের আনুমানিক হিসাব আর ৩ডি মডেল — ইন্টারনেট ছাড়াই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.baribanao">Google Play</a> -->
+                    <a class="btn small" href="app/baribanao/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Islamic Pattern Studio ===== -->
-      <!-- Free to download; Pattern Studio Pro is a one-time in-app purchase through Google Play. -->
-      <article class="card" id="islamicpatternstudio">
-        <div class="head">
-          <img class="icon" src="assets/islamicpatternstudio-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3>ইসলামিক প্যাটার্ন স্টুডিও</h3></div>
-        </div>
-        <p class="text">ইসলামি জ্যামিতিক তারার নকশায় রং করুন, টাইলিং থেকে নিজের নকশা বানান, ঈদের কার্ড ও প্রিন্ট তৈরি করুন। একবার কিনলেই প্রো-তে পাবেন সব প্যাটার্ন, ডিজাইনার আর প্রিন্টের ফাইল। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.islamicpatternstudio">Google Play</a> -->
-            <a class="btn small" href="app/islamicpatternstudio/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Ghor Sajao ===== -->
+        <article class="card" id="ghorsajao">
+                <div class="head">
+                  <img class="icon" src="assets/ghorsajao-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>ঘর সাজাও</h4></div>
+                </div>
+                <p class="text">কেনার আগে ঘরটা থ্রিডিতে সাজিয়ে দেখুন: বিশটির বেশি দেশি ও উপমহাদেশের স্টাইল, আসবাব, মেঝে, দেয়াল আর আলো বাছুন, টাকায় আনুমানিক খরচ দেখুন। বাংলায় ঘরের বর্ণনা লিখলেও সাজিয়ে দেয় — ইন্টারনেট ছাড়াই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ghorsajao">Google Play</a> -->
+                    <a class="btn small" href="app/ghorsajao/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: World Dress Globe ===== -->
-      <!-- Some parts free; the full atlas is one in-app purchase through Google Play (US$3.99). The app itself is in English. -->
-      <article class="card" id="worlddressglobe">
-        <div class="head">
-          <img class="icon" src="assets/worlddressglobe-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3 lang="en">World Dress Globe</h3></div>
-        </div>
-        <p class="text">১৯৫টি দেশের ঐতিহ্যবাহী পোশাকে রং করুন: গ্লোব ঘুরিয়ে দেশ বাছুন, প্রতিটি পোশাকের উৎসসহ গল্প পড়ুন, পাসপোর্টে সিল জমান। বারোটি দেশের প্রধান পোশাক আর প্রতিদিন একটি নতুন দেশের পোশাক বিনামূল্যে; বাকি পুরো অ্যাটলাস একবার কিনলেই আপনার। অ্যাপটি ইংরেজিতে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · পুরো অ্যাটলাস অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.worlddressglobe">Google Play</a> -->
-            <a class="btn small" href="app/worlddressglobe/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Biyer Khata ===== -->
+        <article class="card" id="biyerkhata">
+                <div class="head">
+                  <img class="icon" src="assets/biyerkhata-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>বিয়ের খাতা</h4></div>
+                </div>
+                <p class="text">ঢাকার বিয়ের পরিকল্পনা: প্রতিটি অনুষ্ঠানের আসর থ্রিডিতে সাজান, টাকায় সব খরচ দেখুন। আপনার পরিকল্পনা থাকে আপনার ফোনেই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=bd.biyerkhata.app">Google Play</a> -->
+                    <a class="btn small" href="app/biyerkhata/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Kajer Bhasha ===== -->
-      <article class="card" id="kajerbhasha">
-        <div class="head">
-          <img class="icon" src="assets/kajerbhasha-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিক্ষা</p><h3>কাজের ভাষা</h3></div>
-        </div>
-        <p class="text">উপসাগরীয় দেশ বা মালয়েশিয়ায় কাজে যাচ্ছেন? নির্মাণ, হোটেল, গাড়ি চালানো আর বাসার কাজের দরকারি কথা শিখুন ইংরেজি, আরবি আর মালয় ভাষায়, উচ্চারণ লেখা বাংলায়। নেপালি আর উর্দুতেও। ইন্টারনেট ছাড়াই চলে।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.kajerbhasha">Google Play</a> -->
-            <a class="btn small" href="app/kajerbhasha/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Humsafar ===== -->
+        <article class="card" id="humsafar">
+                <div class="head">
+                  <img class="icon" src="assets/humsafar-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>হামসফর</h4></div>
+                </div>
+                <p class="text">স্বামী-স্ত্রীর জন্য রোজ একটি প্রশ্ন: দুজনে আলাদা করে উত্তর দিন, দুজনের উত্তর একসাথে খুলুন। বাংলা, ইংরেজি, হিন্দি ও উর্দুতে; এক ফোনে বা দুই ফোনে। সব ফোনেই থাকে; কোনো বিজ্ঞাপন বা সাইন-ইন নেই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.humsafar">Google Play</a> -->
+                    <a class="btn small" href="app/humsafar/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: PDF Fit ===== -->
-      <!-- A paid app (one price on Google Play, nothing sold inside the app). -->
-      <article class="card" id="pdffit">
-        <div class="head">
-          <img class="icon" src="assets/pdffit-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">কাজের সরঞ্জাম</p><h3>পিডিএফ ফিট · PDF Fit</h3></div>
+        <!-- ===== App: Garden Book ===== -->
+              <!-- Free to download; the full book is a one-time in-app purchase through Google Play. -->
+        <article class="card" id="gardenbook">
+                <div class="head">
+                  <img class="icon" src="assets/gardenbook-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>গার্ডেন বুক</h4></div>
+                </div>
+                <p class="text">সত্যিকারের বইয়ের মতো পাতা ওল্টানো ছবিসহ গাছের বই: ৪৪৫টি গাছ, যত্নের মাপকাঠি আর আপনার শহর অনুযায়ী বীজ বোনা ও ফসল তোলার ক্যালেন্ডার (গ্রীষ্মমণ্ডলে প্রতিটি পাতায়; অন্যত্র ভেষজ, সবজি ও ঘরের গাছে)। একবার কিনলেই পুরো বই খুলে যায়। বিজ্ঞাপন নেই, সাইন-ইন নেই। (অ্যাপটি ইংরেজিতে)</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.gardenbook">Google Play</a> -->
+                    <a class="btn small" href="app/gardenbook/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
         </div>
-        <p class="text">সার্টিফিকেট, পাসপোর্টের পাতা আর স্ক্যান এক পিডিএফে জুড়ে দিন, পোর্টালের সাইজ সীমার (যেমন ৩০০ KB) নিচে। ফাইল ফোনের বাইরে যায় না; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই। অ্যাপটি ইংরেজিতে।</p>
-        <div class="foot">
-          <span class="price paid">পেইড</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.pdffit">Google Play</a> -->
-            <a class="btn small" href="app/pdffit/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+      </section>
+      <section class="genre" id="genre-food" aria-labelledby="genre-food-h">
+        <h3 class="genre-title" id="genre-food-h">খাবার ও পানীয়</h3>
+        <div class="grid">
+        <!-- ===== App: Ek Mutho Moyda ===== -->
+              <!-- Free, with no ads and no in-app purchases. -->
+        <article class="card" id="ekmuthomoyda">
+                <div class="head">
+                  <img class="icon" src="assets/ekmuthomoyda-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>এক মুঠো ময়দা · Ek Mutho Moyda</h4></div>
+                </div>
+                <p class="text">কেক, বিস্কুট, পেস্ট্রি, ক্রোয়াসাঁ আর রুটি বানানোর সব উপায়: পুরান ঢাকার বাকরখানি থেকে লিসবনের কাস্টার্ড টার্ট পর্যন্ত ৭২টি বেক, প্রতিটির ধাপে ধাপে অ্যানিমেটেড ভিডিও, বেকিংয়ের ২২টি উপায় আর পৃথিবীর বেকারি সফর। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, কোনো তথ্য সংগ্রহ নেই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ekmuthomoyda">Google Play</a> -->
+                    <a class="btn small" href="app/ekmuthomoyda/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Make Your Own Saree ===== -->
-      <article class="card" id="makeyourownsaree">
-        <div class="head">
-          <img class="icon" src="assets/makeyourownsaree-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3 lang="en">Make Your Own Saree</h3></div>
-        </div>
-        <p class="text">দক্ষিণ এশিয়ার ২১৩টি তাঁতের শাড়ি থেকে একটি বেছে নিন: রং করুন, অথবা বুনন, সূচিকর্ম, ব্লক প্রিন্ট, ইক্কত বা টাই-ডাই করে নতুন করে বানান, প্রতিটি কারুশিল্পের নিজস্ব ধারায়: জামদানি, নকশিকাঁথা, পাটোলা, বাঁধনি আর আরও অনেক। অ্যাপটি ইংরেজিতে; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
-        <div class="foot">
-          <span class="price paid">পেইড</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.makeyourownsaree">Google Play</a> -->
-            <a class="btn small" href="app/makeyourownsaree/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Ek Cup Cha ===== -->
+        <article class="card" id="ekcupcha">
+                <div class="head">
+                  <img class="icon" src="assets/ekcupcha-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>এক কাপ চা · Ek Cup Cha</h4></div>
+                </div>
+                <p class="text">চা বানানোর ৯৪টি উপায়, ৬০টি জায়গার: টং-এর রং চা আর সাত রঙের চা থেকে মসলা চা, মাচা আর মরোক্কোর পুদিনা চা। প্রতিটি রেসিপি ধাপে ধাপে অ্যানিমেশনে, সাথে উপকরণ, কারণ, ইতিহাস আর তথ্যসূত্র। ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ekcupcha">Google Play</a> -->
+                    <a class="btn small" href="app/ekcupcha/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Inkling ===== -->
-      <!-- Free to download; Inkling Full (US$4.99) is a one-time in-app purchase through Google Play that opens every course. -->
-      <article class="card" id="inkling">
-        <div class="head">
-          <img class="icon" src="assets/inkling-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিক্ষা</p><h3>Inkling · এসো লিখি</h3></div>
+        <!-- ===== App: Ek Haari ===== -->
+        <article class="card" id="ekhaari">
+                <div class="head">
+                  <img class="icon" src="assets/ekhaari-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>এক হাঁড়ি · Ek Haari</h4></div>
+                </div>
+                <p class="text">সারা পৃথিবীর ভাতের ১১২টি পদ, পুরান ঢাকার কাচ্চি থেকে লিমার আরোজ চাউফা: প্রতিটির রান্না ছোট অ্যানিমেশনে, থামিয়ে বা ধীরে ধাপে ধাপে দেখা যায়, কতজন খাবেন সেই মাপে উপকরণ, আর মানচিত্রে ভাতের বিশ্বভ্রমণ। অ্যাপটি ইংরেজিতে; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ekhaari">Google Play</a> -->
+                    <a class="btn small" href="app/ekhaari/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
         </div>
-        <p class="text">শিশুরা আঙুল দিয়ে বর্ণ লিখে শিখবে পৃথিবীর নানা লিপি: ঘোরানো পৃথিবীতে ১৯৫টি দেশের শুভেচ্ছা আর সংখ্যা, পাসপোর্টের সিল, আর বাংলা, হিন্দি, আরবি, উর্দুসহ সাতটি ভাষার কোর্স। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, কোনো তথ্য সংগ্রহ নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · পুরো সংস্করণ অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.inkling">Google Play</a> -->
-            <a class="btn small" href="app/inkling/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+      </section>
+      <section class="genre" id="genre-learning" aria-labelledby="genre-learning-h">
+        <h3 class="genre-title" id="genre-learning-h">শিক্ষা</h3>
+        <div class="grid">
+        <!-- ===== App: Bangla Braille ===== -->
+        <article class="card" id="banglabraille">
+                <div class="head">
+                  <img class="icon" src="assets/bangla-braille-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>বাংলা ব্রেইল</h4></div>
+                </div>
+                <p class="text">বাংলা লেখা বা বইয়ের ছবি থেকে ব্রেইল: এমবসারের ফাইল ও স্লেট গাইড। ছবি ফোনের ভেতরেই পড়া হয়।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.banglabraille">Google Play</a> -->
+                    <a class="btn small" href="app/bangla-braille/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Garden Book ===== -->
-      <!-- Free to download; the full book is a one-time in-app purchase through Google Play. -->
-      <article class="card" id="gardenbook">
-        <div class="head">
-          <img class="icon" src="assets/gardenbook-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">বই ও তথ্যসূত্র</p><h3>গার্ডেন বুক</h3></div>
-        </div>
-        <p class="text">সত্যিকারের বইয়ের মতো পাতা ওল্টানো ছবিসহ গাছের বই: ৪৪৫টি গাছ, যত্নের মাপকাঠি আর আপনার শহর অনুযায়ী বীজ বোনা ও ফসল তোলার ক্যালেন্ডার (গ্রীষ্মমণ্ডলে প্রতিটি পাতায়; অন্যত্র ভেষজ, সবজি ও ঘরের গাছে)। একবার কিনলেই পুরো বই খুলে যায়। বিজ্ঞাপন নেই, সাইন-ইন নেই। (অ্যাপটি ইংরেজিতে)</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.gardenbook">Google Play</a> -->
-            <a class="btn small" href="app/gardenbook/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Sporsho Chitro ===== -->
+        <article class="card" id="sporshochitro">
+                <div class="head">
+                  <img class="icon" src="assets/sporshochitro-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>স্পর্শ চিত্র</h4></div>
+                </div>
+                <p class="text">পাঠ্যবইয়ের চিত্রের ছবি তুলুন, বাংলা ব্রেইল লেবেলসহ স্পর্শযোগ্য চিত্র বানান — ইন্টারনেট ছাড়াই।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=com.sporshochitro.app">Google Play</a> -->
+                    <a class="btn small" href="app/sporshochitro/privacy/">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Jamdani Loom ===== -->
-      <!-- Free to download; Jamdani Pro is a one-time in-app purchase through Google Play. -->
-      <article class="card" id="jamdaniloom">
-        <div class="head">
-          <img class="icon" src="assets/jamdaniloom-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3>জামদানি তাঁত</h3></div>
-        </div>
-        <p class="text">ছকে জামদানির নকশা আঁকুন, তাঁতে সারির পর সারি বোনা দেখুন, তারপর দেখুন পুরো কাপড়। একবার কিনলেই জামদানি প্রো-তে পাবেন সব নকশা, সব পাড় আর আরও সূক্ষ্ম ছক। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.jamdaniloom">Google Play</a> -->
-            <a class="btn small" href="app/jamdaniloom/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+        <!-- ===== App: Inkling ===== -->
+              <!-- Free to download; Inkling Full (US$4.99) is a one-time in-app purchase through Google Play that opens every course. -->
+        <article class="card" id="inkling">
+                <div class="head">
+                  <img class="icon" src="assets/inkling-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>Inkling · এসো লিখি</h4></div>
+                </div>
+                <p class="text">শিশুরা আঙুল দিয়ে বর্ণ লিখে শিখবে পৃথিবীর নানা লিপি: ঘোরানো পৃথিবীতে ১৯৫টি দেশের শুভেচ্ছা আর সংখ্যা, পাসপোর্টের সিল, আর বাংলা, হিন্দি, আরবি, উর্দুসহ সাতটি ভাষার কোর্স। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, কোনো তথ্য সংগ্রহ নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · পুরো সংস্করণ অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.inkling">Google Play</a> -->
+                    <a class="btn small" href="app/inkling/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Humsafar ===== -->
-      <article class="card" id="humsafar">
-        <div class="head">
-          <img class="icon" src="assets/humsafar-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">লাইফস্টাইল</p><h3>হামসফর</h3></div>
+        <!-- ===== App: Kajer Bhasha ===== -->
+        <article class="card" id="kajerbhasha">
+                <div class="head">
+                  <img class="icon" src="assets/kajerbhasha-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>কাজের ভাষা</h4></div>
+                </div>
+                <p class="text">উপসাগরীয় দেশ বা মালয়েশিয়ায় কাজে যাচ্ছেন? নির্মাণ, হোটেল, গাড়ি চালানো আর বাসার কাজের দরকারি কথা শিখুন ইংরেজি, আরবি আর মালয় ভাষায়, উচ্চারণ লেখা বাংলায়। নেপালি আর উর্দুতেও। ইন্টারনেট ছাড়াই চলে।</p>
+                <div class="foot">
+                  <span class="price">বিনামূল্যে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.kajerbhasha">Google Play</a> -->
+                    <a class="btn small" href="app/kajerbhasha/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
         </div>
-        <p class="text">স্বামী-স্ত্রীর জন্য রোজ একটি প্রশ্ন: দুজনে আলাদা করে উত্তর দিন, দুজনের উত্তর একসাথে খুলুন। বাংলা, ইংরেজি, হিন্দি ও উর্দুতে; এক ফোনে বা দুই ফোনে। সব ফোনেই থাকে; কোনো বিজ্ঞাপন বা সাইন-ইন নেই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.humsafar">Google Play</a> -->
-            <a class="btn small" href="app/humsafar/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
+      </section>
+      <section class="genre" id="genre-tools" aria-labelledby="genre-tools-h">
+        <h3 class="genre-title" id="genre-tools-h">কাজের সরঞ্জাম</h3>
+        <div class="grid">
+        <!-- ===== App: PDF Fit ===== -->
+              <!-- A paid app (one price on Google Play, nothing sold inside the app). -->
+        <article class="card" id="pdffit">
+                <div class="head">
+                  <img class="icon" src="assets/pdffit-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>পিডিএফ ফিট · PDF Fit</h4></div>
+                </div>
+                <p class="text">সার্টিফিকেট, পাসপোর্টের পাতা আর স্ক্যান এক পিডিএফে জুড়ে দিন, পোর্টালের সাইজ সীমার (যেমন ৩০০ KB) নিচে। ফাইল ফোনের বাইরে যায় না; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই। অ্যাপটি ইংরেজিতে।</p>
+                <div class="foot">
+                  <span class="price paid">পেইড</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.pdffit">Google Play</a> -->
+                    <a class="btn small" href="app/pdffit/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
 
-      <!-- ===== App: Nakshi Kantha ===== -->
-      <!-- Free to download; Kantha Pro is a one-time in-app purchase through Google Play. -->
-      <article class="card" id="nakshikantha">
-        <div class="head">
-          <img class="icon" src="assets/nakshikantha-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3>নকশি কাঁথা</h3></div>
+        <!-- ===== App: PhotoFit ===== -->
+              <!-- Free to download; PhotoFit Pro (US$1.99) is a one-time in-app purchase through Google Play that unlocks saving; it is free in Bangladesh, Bhutan, India, the Maldives, Nepal, Pakistan and Sri Lanka. -->
+        <article class="card" id="photofit">
+                <div class="head">
+                  <img class="icon" src="assets/photofit-icon-192.png" alt="" width="64" height="64">
+                  <div><h4>PhotoFit · ফটোফিট</h4></div>
+                </div>
+                <p class="text">পাসপোর্ট, ভিসা ও আইডির ছবি ঠিক মাপে, ফোনেই: পৃথিবীর নানা দেশের মাপ, অনলাইন ফর্মের পিক্সেল আর KB সীমা, নিজে থেকে মাথা বসানো, পেছন সাদা করা আর ৪×৬ ইঞ্চি বা A4 প্রিন্টের পাতা। ছবি ফোনের বাইরে যায় না; বিজ্ঞাপন নেই।</p>
+                <div class="foot">
+                  <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
+                  <div class="actions">
+                    <!-- After the app is live on Google Play, add before the privacy link:
+                    <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.photofit">Google Play</a> -->
+                    <a class="btn small" href="app/photofit/privacy.html">গোপনীয়তা নীতি</a>
+                  </div>
+                </div>
+              </article>
         </div>
-        <p class="text">নকশি কাঁথার নকশা করুন: পদ্ম, মাছ, পাখি আর কলকা বসান, পাড় দিন, মোটিফ ঘিরে পেছনের ঢেউ-ফোঁড় দেখুন। একবার কিনলেই কাঁথা প্রো-তে পাবেন সব মোটিফ আর আসল মাপের সেলাইয়ের প্যাটার্ন। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, সাইন-ইন নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.nakshikantha">Google Play</a> -->
-            <a class="btn small" href="app/nakshikantha/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ===== App: Mehedi Studio ===== -->
-      <!-- Free to download; Mehedi Studio Pro (US$1.99) is a one-time in-app purchase through Google Play. -->
-      <article class="card" id="mehedistudio">
-        <div class="head">
-          <img class="icon" src="assets/mehedistudio-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">শিল্প ও নকশা</p><h3>মেহেদি স্টুডিও · Mehedi Studio</h3></div>
-        </div>
-        <p class="text">জীবন্ত হাত আর পায়ে আয়নার মতো প্রতিসাম্যে হালাল মেহেদির নকশা আঁকুন, দিনে দিনে রঙ কেমন হবে দেখুন, আসল মাপের স্টেনসিল প্রিন্ট করুন বা শিল্পীকে পাঠান। বাংলা, ইংরেজি, হিন্দি, উর্দু ও আরবিতে; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.mehedi">Google Play</a> -->
-            <a class="btn small" href="app/mehedistudio/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
-
-
-      <!-- ===== App: Ghor Sajao ===== -->
-      <article class="card" id="ghorsajao">
-        <div class="head">
-          <img class="icon" src="assets/ghorsajao-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">ঘরবাড়ি</p><h3>ঘর সাজাও</h3></div>
-        </div>
-        <p class="text">কেনার আগে ঘরটা থ্রিডিতে সাজিয়ে দেখুন: বিশটির বেশি দেশি ও উপমহাদেশের স্টাইল, আসবাব, মেঝে, দেয়াল আর আলো বাছুন, টাকায় আনুমানিক খরচ দেখুন। বাংলায় ঘরের বর্ণনা লিখলেও সাজিয়ে দেয় — ইন্টারনেট ছাড়াই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ghorsajao">Google Play</a> -->
-            <a class="btn small" href="app/ghorsajao/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ===== App: PhotoFit ===== -->
-      <!-- Free to download; PhotoFit Pro (US$1.99) is a one-time in-app purchase through Google Play that unlocks saving; it is free in Bangladesh, Bhutan, India, the Maldives, Nepal, Pakistan and Sri Lanka. -->
-      <article class="card" id="photofit">
-        <div class="head">
-          <img class="icon" src="assets/photofit-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">ছবি</p><h3>PhotoFit · ফটোফিট</h3></div>
-        </div>
-        <p class="text">পাসপোর্ট, ভিসা ও আইডির ছবি ঠিক মাপে, ফোনেই: পৃথিবীর নানা দেশের মাপ, অনলাইন ফর্মের পিক্সেল আর KB সীমা, নিজে থেকে মাথা বসানো, পেছন সাদা করা আর ৪×৬ ইঞ্চি বা A4 প্রিন্টের পাতা। ছবি ফোনের বাইরে যায় না; বিজ্ঞাপন নেই।</p>
-        <div class="foot">
-          <span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.photofit">Google Play</a> -->
-            <a class="btn small" href="app/photofit/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ===== App: Ek Mutho Moyda ===== -->
-      <!-- Free, with no ads and no in-app purchases. -->
-      <article class="card" id="ekmuthomoyda">
-        <div class="head">
-          <img class="icon" src="assets/ekmuthomoyda-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">খাবার ও পানীয়</p><h3>এক মুঠো ময়দা · Ek Mutho Moyda</h3></div>
-        </div>
-        <p class="text">কেক, বিস্কুট, পেস্ট্রি, ক্রোয়াসাঁ আর রুটি বানানোর সব উপায়: পুরান ঢাকার বাকরখানি থেকে লিসবনের কাস্টার্ড টার্ট পর্যন্ত ৭২টি বেক, প্রতিটির ধাপে ধাপে অ্যানিমেটেড ভিডিও, বেকিংয়ের ২২টি উপায় আর পৃথিবীর বেকারি সফর। ইন্টারনেট ছাড়াই চলে; বিজ্ঞাপন নেই, কোনো তথ্য সংগ্রহ নেই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ekmuthomoyda">Google Play</a> -->
-            <a class="btn small" href="app/ekmuthomoyda/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ===== App: Ek Cup Cha ===== -->
-      <article class="card" id="ekcupcha">
-        <div class="head">
-          <img class="icon" src="assets/ekcupcha-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">খাবার ও পানীয়</p><h3>এক কাপ চা · Ek Cup Cha</h3></div>
-        </div>
-        <p class="text">চা বানানোর ৯৪টি উপায়, ৬০টি জায়গার: টং-এর রং চা আর সাত রঙের চা থেকে মসলা চা, মাচা আর মরোক্কোর পুদিনা চা। প্রতিটি রেসিপি ধাপে ধাপে অ্যানিমেশনে, সাথে উপকরণ, কারণ, ইতিহাস আর তথ্যসূত্র। ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ekcupcha">Google Play</a> -->
-            <a class="btn small" href="app/ekcupcha/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ===== App: Ek Haari ===== -->
-      <article class="card" id="ekhaari">
-        <div class="head">
-          <img class="icon" src="assets/ekhaari-icon-192.png" alt="" width="64" height="64">
-          <div><p class="cat">খাবার ও পানীয়</p><h3>এক হাঁড়ি · Ek Haari</h3></div>
-        </div>
-        <p class="text">সারা পৃথিবীর ভাতের ১১২টি পদ, পুরান ঢাকার কাচ্চি থেকে লিমার আরোজ চাউফা: প্রতিটির রান্না ছোট অ্যানিমেশনে, থামিয়ে বা ধীরে ধাপে ধাপে দেখা যায়, কতজন খাবেন সেই মাপে উপকরণ, আর মানচিত্রে ভাতের বিশ্বভ্রমণ। অ্যাপটি ইংরেজিতে; ইন্টারনেট ছাড়াই চলে, বিজ্ঞাপন নেই।</p>
-        <div class="foot">
-          <span class="price">বিনামূল্যে</span>
-          <div class="actions">
-            <!-- After the app is live on Google Play, add before the privacy link:
-            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.teatimecrumbles.ekhaari">Google Play</a> -->
-            <a class="btn small" href="app/ekhaari/privacy.html">গোপনীয়তা নীতি</a>
-          </div>
-        </div>
-      </article>
-      </div>
+      </section>
     </div>
   </section>
 
