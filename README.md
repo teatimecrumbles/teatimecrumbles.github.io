@@ -38,7 +38,7 @@ app/
     index.html             opens privacy.html, so the folder's own address shows the policy too
   pdffit/                  PDF Fit: only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/pdffit/privacy.html   <- Play Console "Privacy policy" URL
-  makeyourownsaree/        Make Your Own Saree (a paid app): only the privacy policy is public (the app itself is Android-only and private)
+  makeyourownsaree/        Saree Banao (a paid app, the Make Your Own Saree studio): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/makeyourownsaree/privacy.html   <- Play Console "Privacy policy" URL
   inkling/                 Inkling (a free children's app with the in-app purchase Inkling Full; এসো লিখি is its Bangla edition): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/inkling/privacy.html   <- Play Console "Privacy policy" URL
@@ -210,9 +210,10 @@ The app contains a copy of `app/pdffit/privacy.html`, and the app's build **fail
 changes, edit it here and copy the same file to `pdffit/app/src/main/assets/privacy.html` in `myapps`. Like the Bangla Braille
 page, it is self-contained (no fonts, scripts or links to other files), so the same file works on the website and inside the app.
 
-## Make Your Own Saree and its privacy policy
+## Saree Banao and its privacy policy
 
-Make Your Own Saree is a **paid** Android app (package `io.github.teatimecrumbles.makeyourownsaree`, one price on Google Play,
+Saree Banao (শাড়ি বানাও, “make a saree”; on Google Play *Saree Banao: Design Your Saree*) is the Android app of the
+saree studio *Make Your Own Saree*, which also names its folders. It is a **paid** Android app (package `io.github.teatimecrumbles.makeyourownsaree`, one price on Google Play,
 nothing sold inside the app): pick one of 213 handloom sarees from South Asia, then colour it or make it again by weaving,
 embroidery, block printing, ikat or tie-dye. The app itself is in English and works offline. Its code lives in the private
 repository `teatimecrumbles/myapps` (folder `makeyourownsaree`). Only the privacy policy is published here, at
