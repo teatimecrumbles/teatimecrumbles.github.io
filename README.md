@@ -47,10 +47,12 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/jamdaniloom/privacy.html   <- Play Console "Privacy policy" URL
   humsafar/                Humsafar (হামসফর): only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/humsafar/privacy.html   <- Play Console "Privacy policy" URL
+  mehedistudio/            Mehedi Studio (মেহেদি স্টুডিও; free, with the in-app purchase Mehedi Studio Pro): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/mehedistudio/privacy.html   <- Play Console "Privacy policy" URL
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png,
-  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png, jamdaniloom-icon-192.png, humsafar-icon-192.png
+  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png, jamdaniloom-icon-192.png, humsafar-icon-192.png, mehedistudio-icon-192.png
                            fonts and icons used by the hub pages (index.html, en/index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
