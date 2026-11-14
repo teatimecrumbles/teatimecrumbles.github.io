@@ -12,7 +12,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 syste
 main { max-width: 680px; margin: 0 auto; padding: 40px max(18px, env(safe-area-inset-left)) 64px; }
 h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; color: var(--accent); text-wrap: balance; }
 h2 { font-size: 1.15rem; margin: 32px 0 6px; }
-p, li { margin: 0 0 12px; }
+p, li { margin: 0 0 12px; overflow-wrap: anywhere; }
 ul { padding-left: 1.2em; }
 .meta { color: var(--muted); font-size: .95rem; margin-bottom: 28px; }
 hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0 28px; }
@@ -24,75 +24,92 @@ a { color: var(--accent); }
 <h1>Mehedi Studio privacy policy</h1>
 <p class="meta">Effective 14 November 2026 · applies to the Mehedi Studio Android app</p>
 
-<p>Mehedi Studio is a henna (mehedi) design app made by <strong>Mohammad Motiur Rahman</strong>. This policy explains what the app does with your information. In short: the developer collects nothing, and if you buy Mehedi Studio Pro, Google Play handles the payment.</p>
+<p>Mehedi Studio is a henna (mehedi) design app made by <strong>Mohammad Motiur Rahman</strong>. This policy explains what the app does with your information. In short: the app sends nothing to the developer, and if you buy Mehedi Studio Pro, Google Play handles the payment.</p>
 
 <h2>What the app collects</h2>
-<p>The developer collects nothing. Mehedi Studio does not send your designs or any personal or sensitive information to the developer or to any server of its own, and it does not sell or share it. It has no accounts, no ads, no analytics and no tracking, and it does not use the advertising ID.</p>
+<p>The app sends nothing to the developer. Mehedi Studio does not send your designs or any personal or sensitive information to the developer or to any server of its own, and it does not sell or share it. It has no accounts, no ads, no analytics and no tracking, and it does not use the advertising ID. Apart from what you save or share yourself and your own Google backup, the only information that leaves your phone is about your Pro purchase, which Google Play's billing library exchanges with Google Play (see below). Google Play's Data safety section lists this as purchase history: it is used only to unlock Pro and is not shared with anyone else.</p>
 
 <h2>Buying Mehedi Studio Pro</h2>
 <p>Mehedi Studio is free. Some extras (all ready designs, life-size stencil PDFs, the card and message for your artist, and the mehedi night planner) are unlocked by a one-time in-app purchase, Mehedi Studio Pro, sold through Google Play.</p>
 <ul>
-<li>Google Play takes the payment and keeps the purchase record under your Google account, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the Google Play Terms of Service. The app never sees your card, bank or Google account details.</li>
-<li>To unlock Pro, the app uses Google's Play Billing library, which talks to the Google Play Store app on your phone. It tells the app whether this Google account owns Pro, the price in your currency, and a purchase token that the app passes back to Google Play to confirm the purchase. Google Play may also receive technical information about the purchase screen from that library. The developer has no server and receives none of this, except the sales reports Google Play gives every seller, which list each order with details such as its order number, product, price, date and the buyer's country or postal area. The developer uses them only for accounts and taxes.</li>
-<li>The app remembers on your phone that Pro is unlocked, so it keeps working offline. "Restore purchase" asks Google Play again, for example on a new phone.</li>
+<li>Google Play takes the payment and keeps the purchase record under your Google account, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the Google Play Terms of Service. The app never sees your card, bank or Google account details, and the developer never sees your card or bank details.</li>
+<li>To unlock Pro, the app uses Google's Play Billing library, which talks to the Google Play Store app on your phone. It contacts Google Play when the app starts, each time you come back to it, and when you tap Unlock or "Restore purchase". Google Play tells the app whether this Google account owns Pro, the price in your currency, and a purchase token that the app passes back to Google Play to confirm the purchase. The library may also send Google technical information about these requests. The developer has no server and receives none of this.</li>
+<li>For each sale, Google gives the developer the order details that Google includes in its sales reports, such as the order number, the date, the price and taxes, the device model and the country of purchase (for some countries also the city, state or province and postal code). The developer uses them only for accounting, taxes and questions about an order, does not combine them with any other data, and keeps them only as long as accounting and tax rules require.</li>
+<li>The app remembers on your phone whether Pro is unlocked (and its price), so it keeps working offline. "Restore purchase" asks Google Play again, for example on a new phone.</li>
 <li>Refunds are handled by Google Play. If a purchase is refunded, Pro is locked again the next time the app checks with Google Play.</li>
 </ul>
 
 <h2>What stays on your phone</h2>
 <ul>
 <li>Your designs, your settings and the language you choose are saved inside the app's own storage on your phone, so you can come back to them. If Android backup is turned on, Android also keeps a copy in your own Google backup (see below).</li>
+<li>The details you type for your artist (such as your name, the date and time, the place and notes) are saved with the design, also in design files you save, and leave the phone only in a card, message or file that you share, save or copy.</li>
+<li>"Copy message" puts the message for your artist on the clipboard; the app never reads the clipboard.</li>
+<li>The night planner suggests a city from your phone's time zone and saves the city you choose on your phone. The app has no location permission.</li>
 <li>If you choose a photo of your hand to trace over, the app reads it on your phone only. The photo is not copied into your saved designs and is never sent anywhere.</li>
-<li>The app uses Android's photo picker. It does not ask for permission to see your photo library.</li>
+<li>To add a photo or open a design file, the app uses Android's photo or file picker and reads only what you pick. It does not ask for permission to see your photos or files.</li>
 </ul>
 
 <h2>Files you save or share</h2>
-<p>When you save a picture, a stencil PDF or a design file, it goes to your phone's Pictures or Downloads folder, or to the place you pick. When you share a design card, Android's share screen sends it to the app and person you choose, such as WhatsApp. Mehedi Studio does not see or keep any copy of what those apps do with it.</p>
+<p>When you save a picture, a stencil PDF or a design file, it goes to the Mehedi Studio folder in your phone's Pictures or Downloads, or, on Android 8 and 9, to the place you pick. When you share a design card, Android's share screen sends it to the app and person you choose, such as WhatsApp. For sharing, the app keeps a temporary copy in its private cache; copies older than a day are deleted when you share again. Mehedi Studio never sees what the other app does with it.</p>
 
 <h2>Internet</h2>
-<p>Everything the app needs is built in, and it works offline. Android lists an internet permission because the app's built-in viewer uses it to load the app's own files, and Google Play's billing library uses the network when you buy or restore Pro. The design screen blocks every outside connection, and it turns off Android WebView's usage reports and Safe Browsing lookups. Links to the sources in the halal and care guide open in your browser only when you tap them.</p>
+<p>Everything the app needs is built in, and it works offline. Android lists three permissions that need no asking: internet access and network state, which Google Play's billing library uses, and Google Play billing itself. The design screen blocks every outside connection, and it turns off Android WebView's usage reports and Safe Browsing lookups. Links to the sources in the halal and care guide, and the link to this policy, open in your browser only when you tap them.</p>
+
+<h2>Security</h2>
+<p>Your designs, settings and the details for your artist are kept in the app's private storage, which other apps on your phone cannot read. The design screen sends nothing over the internet; the only part of the app that goes online is Google Play's billing library, which talks to Google over encrypted connections. The developer has no server and holds no copy of your designs. Files you save to Pictures or Downloads can be opened by your gallery or files app and by any app you allow; a card you share goes to the app you choose.</p>
 
 <h2>Keeping and deleting your information</h2>
-<p>Your designs stay on your phone until you delete them in the app, clear the app's storage, or uninstall the app. The developer has no copy, so there is nothing to request or delete from us. If Android backup is turned on, Android may include the app's designs in your own Google backup, under your control.</p>
+<p>Your designs stay on your phone until you delete them in the app, clear the app's storage, or uninstall the app; files you saved stay where you saved them until you delete them there. The app sends nothing to the developer, so there is no copy of your designs to request or delete from us. If Android backup is turned on, Android may include the app's designs in your own Google backup, under your control. The order details described under "Buying Mehedi Studio Pro" are kept only as long as accounting and tax rules require; to ask about them, or to have your e-mails deleted, write to the address below.</p>
 
 <h2>Children</h2>
-<p>Mehedi Studio is not directed at children under 13, and the developer collects no information from anyone, including children. Purchases follow Google Play's own rules for family accounts and purchase approval.</p>
+<p>Mehedi Studio is not directed at children under 13, and the app sends the developer no information about anyone, including children. Purchases follow Google Play's own rules for family accounts and purchase approval.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:mohammadmotiurrahman@gmail.com">mohammadmotiurrahman@gmail.com</a></p>
+<p>Questions about privacy: <a href="mailto:mohammadmotiurrahman@gmail.com">mohammadmotiurrahman@gmail.com</a>. If you write, your e-mail address and message are used only to answer you, and are deleted when you ask.</p>
 
 <hr>
 
 <h1 lang="bn">মেহেদি স্টুডিও গোপনীয়তা নীতি</h1>
 <div lang="bn">
 <p class="meta">কার্যকর: ১৪ নভেম্বর ২০২৬ · মেহেদি স্টুডিও অ্যান্ড্রয়েড অ্যাপের জন্য</p>
-<p>মেহেদি স্টুডিও একটি মেহেদি নকশার অ্যাপ, বানিয়েছেন <strong>Mohammad Motiur Rahman</strong>। সংক্ষেপে: ডেভেলপার আপনার কোনো তথ্য সংগ্রহ করেন না; মেহেদি স্টুডিও প্রো কিনলে পেমেন্ট Google Play সামলায়।</p>
+<p>মেহেদি স্টুডিও একটি মেহেদি নকশার অ্যাপ, বানিয়েছেন <strong>Mohammad Motiur Rahman</strong>। এই নীতিতে বলা আছে, অ্যাপ আপনার তথ্য নিয়ে কী করে। সংক্ষেপে: অ্যাপ ডেভেলপারের কাছে কিছুই পাঠায় না; মেহেদি স্টুডিও প্রো কিনলে পেমেন্ট Google Play সামলায়।</p>
 <h2>অ্যাপ কী সংগ্রহ করে</h2>
-<p>ডেভেলপার কিছুই সংগ্রহ করেন না। কোনো অ্যাকাউন্ট, বিজ্ঞাপন, অ্যানালিটিক্স বা ট্র্যাকিং নেই; বিজ্ঞাপন আইডিও ব্যবহার হয় না। আপনার নকশা বা কোনো ব্যক্তিগত তথ্য ডেভেলপারের কাছে বা কোনো সার্ভারে যায় না, বিক্রি বা শেয়ারও হয় না।</p>
+<p>অ্যাপ ডেভেলপারের কাছে কিছুই পাঠায় না। আপনার নকশা বা কোনো ব্যক্তিগত বা সংবেদনশীল তথ্য মেহেদি স্টুডিও ডেভেলপারের কাছে বা নিজের কোনো সার্ভারে পাঠায় না, বিক্রি বা শেয়ারও করে না। কোনো অ্যাকাউন্ট, বিজ্ঞাপন, অ্যানালিটিক্স বা ট্র্যাকিং নেই; বিজ্ঞাপন আইডিও ব্যবহার হয় না। আপনি নিজে যা সেভ বা শেয়ার করেন আর আপনার নিজের Google ব্যাকআপ ছাড়া, ফোন থেকে বাইরে যায় শুধু আপনার প্রো কেনার তথ্য, যা Google Play-র বিলিং লাইব্রেরি Google Play-র সঙ্গে আদান-প্রদান করে (নিচে দেখুন)। Google Play-র Data safety অংশে এটি “কেনাকাটার ইতিহাস” (Purchase history) হিসেবে দেখানো হয়: এটি শুধু প্রো চালু করতে ব্যবহার হয়, আর অন্য কারও সঙ্গে শেয়ার হয় না।</p>
 <h2>মেহেদি স্টুডিও প্রো কেনা</h2>
 <p>মেহেদি স্টুডিও বিনামূল্যের। কিছু বাড়তি সুবিধা (সব তৈরি নকশা, আসল মাপের স্টেনসিল PDF, শিল্পীর জন্য কার্ড ও বার্তা, মেহেদি রাতের পরিকল্পনা) Google Play-তে একবারের কেনা "মেহেদি স্টুডিও প্রো" দিয়ে খোলে।</p>
 <ul>
-<li>পেমেন্ট নেয় Google Play, আর কেনার রেকর্ড থাকে আপনার Google অ্যাকাউন্টে (<a href="https://policies.google.com/privacy">Google গোপনীয়তা নীতি</a> অনুযায়ী)। অ্যাপ আপনার কার্ড, ব্যাংক বা Google অ্যাকাউন্টের তথ্য দেখে না।</li>
-<li>প্রো চালু করতে অ্যাপ Google-এর Play Billing লাইব্রেরি ব্যবহার করে, যা ফোনের Google Play Store অ্যাপের সঙ্গে কথা বলে। এটি জানায় এই অ্যাকাউন্টে প্রো কেনা আছে কিনা, আপনার মুদ্রায় দাম, আর একটি কেনার টোকেন যা অ্যাপ Google Play-কে ফেরত দিয়ে কেনা নিশ্চিত করে। ডেভেলপারের কোনো সার্ভার নেই; তিনি শুধু Google Play-র সাধারণ বিক্রির রিপোর্ট পান, যাতে অর্ডার নম্বর, পণ্য, দাম, তারিখ আর ক্রেতার দেশ বা পোস্টাল এলাকার মতো তথ্য থাকে; এগুলো কেবল হিসাব ও কর-এর কাজে ব্যবহার হয়।</li>
-<li>প্রো চালু আছে, এ কথা অ্যাপ ফোনেই মনে রাখে, তাই অফলাইনেও চলে। নতুন ফোনে "আগের কেনা ফিরিয়ে আনুন" চাপুন।</li>
-<li>রিফান্ড Google Play দেয়। রিফান্ড হলে পরের বার যাচাইয়ের সময় প্রো আবার বন্ধ হয়ে যায়।</li>
+<li>পেমেন্ট নেয় Google Play, আর কেনার রেকর্ড থাকে আপনার Google অ্যাকাউন্টে (<a href="https://policies.google.com/privacy">Google গোপনীয়তা নীতি</a> ও Google Play-র সেবার শর্ত অনুযায়ী)। অ্যাপ আপনার কার্ড, ব্যাংক বা Google অ্যাকাউন্টের তথ্য দেখে না, আর ডেভেলপারও আপনার কার্ড বা ব্যাংকের তথ্য কখনো দেখেন না।</li>
+<li>প্রো চালু করতে অ্যাপ Google-এর Play Billing লাইব্রেরি ব্যবহার করে, যা ফোনের Google Play Store অ্যাপের সঙ্গে কথা বলে। অ্যাপ চালু হলে, প্রতিবার অ্যাপে ফিরে এলে, আর আপনি "খুলুন" বা "আগের কেনা ফিরিয়ে আনুন" চাপলে এটি Google Play-র সঙ্গে যোগাযোগ করে। Google Play অ্যাপকে জানায় এই অ্যাকাউন্টে প্রো কেনা আছে কিনা, আপনার মুদ্রায় দাম, আর একটি কেনার টোকেন, যা অ্যাপ Google Play-কে ফেরত দিয়ে কেনা নিশ্চিত করে। লাইব্রেরিটি এসব অনুরোধ নিয়ে কিছু কারিগরি তথ্যও Google-কে পাঠাতে পারে। ডেভেলপারের কোনো সার্ভার নেই, এর কিছুই তিনি পান না।</li>
+<li>প্রতিটি বিক্রির জন্য Google ডেভেলপারকে সেই অর্ডারের তথ্য দেয়, যা Google তার বিক্রয়-রিপোর্টে রাখে, যেমন অর্ডার নম্বর, তারিখ, দাম ও কর, ডিভাইসের মডেল আর কোন দেশ থেকে কেনা হয়েছে (কিছু দেশের ক্ষেত্রে শহর, রাজ্য বা প্রদেশ এবং পোস্টাল কোডও)। ডেভেলপার এগুলো শুধু হিসাবরক্ষণ, কর ও কোনো অর্ডার নিয়ে প্রশ্নের উত্তরের জন্য ব্যবহার করেন, অন্য কোনো তথ্যের সাথে মেলান না, আর হিসাব ও করের নিয়মে যতদিন রাখা দরকার শুধু ততদিনই রাখেন।</li>
+<li>প্রো চালু আছে কি না (আর তার দাম), অ্যাপ তা ফোনেই মনে রাখে, তাই অফলাইনেও চলে। "আগের কেনা ফিরিয়ে আনুন" Google Play-কে আবার জিজ্ঞেস করে, যেমন নতুন ফোনে।</li>
+<li>রিফান্ড Google Play দেয়। রিফান্ড হলে পরের বার অ্যাপ Google Play-র সঙ্গে যাচাই করলে প্রো আবার বন্ধ হয়ে যায়।</li>
 </ul>
 <h2>যা আপনার ফোনেই থাকে</h2>
 <ul>
-<li>আপনার নকশা, সেটিংস আর বেছে নেওয়া ভাষা অ্যাপের নিজস্ব স্টোরেজে, এই ফোনেই সেভ থাকে; অ্যান্ড্রয়েড ব্যাকআপ চালু থাকলে আপনার নিজের Google ব্যাকআপেও।</li>
+<li>আপনার নকশা, সেটিংস আর বেছে নেওয়া ভাষা অ্যাপের নিজস্ব স্টোরেজে, এই ফোনেই সেভ থাকে, যাতে পরে আবার খুলতে পারেন। অ্যান্ড্রয়েড ব্যাকআপ চালু থাকলে অ্যান্ড্রয়েড আপনার নিজের Google ব্যাকআপেও একটি কপি রাখে (নিচে দেখুন)।</li>
+<li>শিল্পীর জন্য যা লেখেন (যেমন আপনার নাম, তারিখ ও সময়, স্থান আর নোট), তা নকশার সঙ্গে সেভ থাকে, আপনার সেভ করা নকশার ফাইলেও; ফোনের বাইরে যায় কেবল আপনার শেয়ার, সেভ বা কপি করা কার্ড, বার্তা বা ফাইলে।</li>
+<li>"বার্তা কপি" শিল্পীর জন্য বার্তাটি ক্লিপবোর্ডে রাখে; অ্যাপ কখনো ক্লিপবোর্ড পড়ে না।</li>
+<li>মেহেদি রাতের পরিকল্পনা ফোনের টাইম জোন দেখে একটি শহর প্রস্তাব করে, আর আপনার বেছে নেওয়া শহর ফোনে সেভ রাখে। অ্যাপের লোকেশনের কোনো পারমিশন নেই।</li>
 <li>হাতের ছবির ওপর নকশা আঁকতে চাইলে ছবিটি কেবল ফোনেই পড়া হয়। এটি নকশার সঙ্গে সেভ হয় না, কোথাও পাঠানোও হয় না।</li>
-<li>অ্যাপটি অ্যান্ড্রয়েডের ফটো পিকার ব্যবহার করে; আপনার পুরো ছবির লাইব্রেরি দেখার অনুমতি চায় না।</li>
+<li>ছবি যোগ করতে বা নকশার ফাইল খুলতে অ্যাপ অ্যান্ড্রয়েডের ফটো বা ফাইল পিকার ব্যবহার করে, আর শুধু আপনার বেছে নেওয়াটুকুই পড়ে। আপনার ছবি বা ফাইল দেখার পারমিশন চায় না।</li>
 </ul>
 <h2>যে ফাইল আপনি সেভ বা শেয়ার করেন</h2>
-<p>ছবি, স্টেনসিল PDF বা নকশার ফাইল সেভ করলে সেটি ফোনের Pictures বা Downloads ফোল্ডারে, কিংবা আপনার বেছে নেওয়া জায়গায় যায়। কার্ড শেয়ার করলে অ্যান্ড্রয়েডের শেয়ার স্ক্রিন সেটি আপনার বেছে নেওয়া অ্যাপে (যেমন WhatsApp) পাঠায়।</p>
+<p>ছবি, স্টেনসিল PDF বা নকশার ফাইল সেভ করলে সেটি ফোনের Pictures বা Downloads-এর Mehedi Studio ফোল্ডারে যায়, আর অ্যান্ড্রয়েড ৮ ও ৯-এ আপনার বেছে নেওয়া জায়গায়। কার্ড শেয়ার করলে অ্যান্ড্রয়েডের শেয়ার স্ক্রিন সেটি আপনার বেছে নেওয়া অ্যাপ ও মানুষের কাছে (যেমন WhatsApp-এ) পাঠায়। শেয়ারের জন্য অ্যাপ নিজের ক্যাশে একটি অস্থায়ী কপি রাখে; আবার শেয়ার করলে এক দিনের বেশি পুরোনো কপি মুছে যায়। অন্য অ্যাপ সেটি নিয়ে কী করে, মেহেদি স্টুডিও তা দেখে না।</p>
 <h2>ইন্টারনেট</h2>
-<p>অ্যাপের সবকিছু ভেতরেই আছে, ইন্টারনেট ছাড়াই চলে। অ্যাপের ভেতরের ভিউয়ার নিজের ফাইল খুলতে আর প্রো কেনা বা ফিরিয়ে আনার সময় Google Play-র বিলিং লাইব্রেরি ইন্টারনেট ব্যবহার করে বলে অ্যান্ড্রয়েডে এই পারমিশন দেখায়; নকশার পাতা বাইরের সব সংযোগ বন্ধ রাখে। গাইডের উৎসের লিংক কেবল আপনি ট্যাপ করলে ব্রাউজারে খোলে।</p>
+<p>অ্যাপের সবকিছু ভেতরেই আছে, ইন্টারনেট ছাড়াই চলে। অ্যান্ড্রয়েড তিনটি পারমিশন দেখায়, যেগুলোর জন্য জিজ্ঞেস করতে হয় না: ইন্টারনেট ও নেটওয়ার্কের অবস্থা, যা Google Play-র বিলিং লাইব্রেরি ব্যবহার করে, আর Google Play বিলিং নিজে। নকশার পাতা বাইরের সব সংযোগ বন্ধ রাখে, আর অ্যান্ড্রয়েড WebView-এর ব্যবহারের রিপোর্ট ও Safe Browsing যাচাইও বন্ধ রাখে। হালাল ও যত্ন নির্দেশিকার উৎসের লিংক, আর এই নীতির লিংক, কেবল আপনি ট্যাপ করলে ব্রাউজারে খোলে।</p>
+<h2>নিরাপত্তা</h2>
+<p>আপনার নকশা, সেটিংস আর শিল্পীর জন্য লেখা তথ্য অ্যাপের নিজস্ব স্টোরেজে থাকে, যা ফোনের অন্য অ্যাপ পড়তে পারে না। নকশার পাতা ইন্টারনেটে কিছুই পাঠায় না; অ্যাপের একমাত্র যে অংশ ইন্টারনেটে যায়, তা Google Play-র বিলিং লাইব্রেরি, যা এনক্রিপ্ট করা সংযোগে Google-এর সঙ্গে কথা বলে। ডেভেলপারের কোনো সার্ভার নেই, আর আপনার নকশার কোনো কপিও তাঁর কাছে নেই। Pictures বা Downloads-এ সেভ করা ফাইল আপনার গ্যালারি বা ফাইল অ্যাপ আর যেসব অ্যাপকে আপনি অনুমতি দেন, সেগুলো খুলতে পারে; শেয়ার করা কার্ড যায় আপনার বেছে নেওয়া অ্যাপে।</p>
 <h2>তথ্য রাখা ও মুছে ফেলা</h2>
-<p>অ্যাপে মুছে ফেললে, অ্যাপের স্টোরেজ মুছলে বা অ্যাপ আনইনস্টল করলে নকশাগুলো ফোন থেকে মুছে যায়। অ্যান্ড্রয়েড ব্যাকআপ চালু থাকলে অ্যান্ড্রয়েড আপনার নিজের Google ব্যাকআপে নকশার একটি কপি রাখতে পারে, যা আপনার নিয়ন্ত্রণে থাকে। ডেভেলপারের কাছে কোনো কপি থাকে না।</p>
+<p>অ্যাপে মুছে ফেললে, অ্যাপের স্টোরেজ মুছলে বা অ্যাপ আনইনস্টল করলে নকশাগুলো ফোন থেকে মুছে যায়; সেভ করা ফাইল যেখানে রেখেছেন সেখানেই থাকে, যতক্ষণ না আপনি সেখানে মুছে ফেলেন। অ্যাপ ডেভেলপারের কাছে কিছুই পাঠায় না, তাই ডেভেলপারের কাছে আপনার নকশার এমন কোনো কপি নেই, যা চাইতে বা মুছতে বলতে হবে। অ্যান্ড্রয়েড ব্যাকআপ চালু থাকলে অ্যান্ড্রয়েড আপনার নিজের Google ব্যাকআপে নকশার একটি কপি রাখতে পারে, যা আপনার নিয়ন্ত্রণে থাকে। "মেহেদি স্টুডিও প্রো কেনা" অংশে বলা অর্ডারের তথ্য শুধু হিসাব ও করের নিয়মে যতদিন দরকার ততদিন রাখা হয়; এ নিয়ে জানতে, বা আপনার পাঠানো ই-মেইল মুছে ফেলতে, নিচের ঠিকানায় লিখুন।</p>
+<h2>শিশু</h2>
+<p>মেহেদি স্টুডিও ১৩ বছরের কম বয়সী শিশুদের উদ্দেশ্যে নয়, আর অ্যাপ শিশুসহ কারও কোনো তথ্য ডেভেলপারের কাছে পাঠায় না। কেনাকাটায় পারিবারিক অ্যাকাউন্ট ও কেনার অনুমোদন নিয়ে Google Play-র নিজস্ব নিয়ম প্রযোজ্য।</p>
+<h2>পরিবর্তন</h2>
+<p>এই নীতি বদলালে নতুন সংস্করণ নতুন কার্যকর তারিখসহ এই পাতায় প্রকাশ করা হবে।</p>
 <h2>যোগাযোগ</h2>
-<p><a href="mailto:mohammadmotiurrahman@gmail.com">mohammadmotiurrahman@gmail.com</a></p>
+<p>গোপনীয়তা নিয়ে প্রশ্ন থাকলে লিখুন: <a href="mailto:mohammadmotiurrahman@gmail.com">mohammadmotiurrahman@gmail.com</a>। আপনি লিখলে আপনার ই-মেইল ঠিকানা ও বার্তা শুধু আপনাকে উত্তর দেওয়ার জন্য ব্যবহার করা হয়, আর আপনি চাইলে মুছে ফেলা হয়।</p>
 </div>
 </main>
 </body>
