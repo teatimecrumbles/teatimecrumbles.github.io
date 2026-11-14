@@ -41,10 +41,12 @@ app/
     privacy.html           https://teatimecrumbles.github.io/app/inkling/privacy.html   <- Play Console "Privacy policy" URL
   gardenbook/              Garden Book: only the privacy policy is public (the app itself is Android-only and private)
     privacy.html           https://teatimecrumbles.github.io/app/gardenbook/privacy.html   <- Play Console "Privacy policy" URL
+  jamdaniloom/             Jamdani Loom (জামদানি তাঁত): only the privacy policy is public (the app itself is Android-only and private)
+    privacy.html           https://teatimecrumbles.github.io/app/jamdaniloom/privacy.html   <- Play Console "Privacy policy" URL
 assets/
   fonts/, nakshipitha-icon-192.png, sporshochitro-icon-192.png, bangla-braille-icon-192.png, baribanao-icon-192.png,
   biyerkhata-icon-192.png, darzistudio-icon-192.png, islamicpatternstudio-icon-192.png, worlddressglobe-icon-192.png,
-  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png
+  kajerbhasha-icon-192.png, pdffit-icon-192.png, makeyourownsaree-icon-192.png, inkling-icon-192.png, gardenbook-icon-192.png, jamdaniloom-icon-192.png
                            fonts and icons used by the hub pages (index.html, en/index.html)
   site.css                 the look of both hub pages (index.html and en/index.html), with its three themes
   theme.js                 remembers which theme a visitor picked (see "Themes" below)
@@ -78,7 +80,7 @@ and titles, Hind Siliguri for the text.
    `<span class="price paid">পেইড</span>` / `<span class="price paid">Paid</span>` for a paid one, or
    `<span class="price paid">বিনামূল্যে · প্রো অ্যাপের ভেতরে</span>` / `<span class="price paid">Free · Pro in-app</span>` for a free
    app with an in-app purchase (like Darzi Studio).
-   The row of icons holds rows of three (thirteen icons: four full rows and one centred below); for the next app, see
+   The row of icons holds rows of three (fourteen icons now: four full rows and the last centred below them); for the next app, see
    the comment next to `.showcase` in `assets/site.css`.
 5. If any app shows ads (AdMob or others), add an `app-ads.txt` file at the root of this repository, so it is served at
    https://teatimecrumbles.github.io/app-ads.txt, and set the Play Console "Website" of that app to https://teatimecrumbles.github.io/.
@@ -220,3 +222,16 @@ The app contains a copy of `app/gardenbook/privacy.html` (opened from its Your g
 the two differ**. So when the policy changes, edit it here and copy the same file to
 `gardenbook/app/src/main/assets/web/privacy.html` in `myapps`. Like the Bangla Braille page, it is self-contained, so the
 same file works on the website and inside the app.
+
+## Jamdani Loom and its privacy policy
+
+Jamdani Loom is an Android app (package `io.github.teatimecrumbles.jamdaniloom`): free to download, with one optional in-app
+purchase, Jamdani Pro, sold through Google Play. Its code, including the weaving page inside it, lives in the private repository
+`teatimecrumbles/myapps` (folder `jamdaniloom`). Only the privacy policy is published here, at `app/jamdaniloom/privacy.html`,
+because Google Play needs a public address for it.
+
+The app contains a copy of `app/jamdaniloom/privacy.html` (its Privacy policy links open it inside the app), and the app's build
+**fails if the two differ**. So when the policy changes, edit it here and copy the same file to
+`jamdaniloom/app/src/main/assets/web/privacy.html` in `myapps`. Like the Bangla Braille page, it is self-contained (no scripts,
+fonts or other files), in English and Bangla. If the app ever starts handling data differently, update this page before
+releasing that version.
